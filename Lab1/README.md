@@ -38,8 +38,20 @@ Hàm BFS chính:
 graph: đồ thị với các cạnh có trọng số  
 start: nút bắt đầu tìm kiếm  
 goal: nút đích đến  
+
 Khởi tạo hàng đợi và tập visited:  
 ![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
+Hàng đợi gồm có: node, path, total_weight.  
+
+Vòng lặp chính:  
+![image](https://github.com/user-attachments/assets/4d5c5f67-c444-42f9-b0f0-c9ef2067369e)  
+Nếu tìm được đích thì trả về đường đi và tổng trọng số  
+![image](https://github.com/user-attachments/assets/58d0f744-bd6d-4e68-88e5-c278eecb530e)  
+
+
+
+
+
 
 
 
