@@ -31,7 +31,16 @@ graph TD
   - S-A: 2, S-C: 5, A-B: 3, A-D: 4, B-E: 6, C-D: 7, C-F: 9, D-E: 8, E-H: 10, F-G: 12, G-H: 15.
 - **Đặc điểm**: Nhiều đường đi từ S đến H, có chu trình (A-D-E-B-A).
 
-** Đồ thị BFS trên đồ thị mẫu 6:  **  
+Đồ thị BFS trên đồ thị mẫu 6:  
+
+Hàm BFS chính: ![image](https://github.com/user-attachments/assets/a8c6a965-02be-407c-8378-79a32eeafb4b)  
+graph: đồ thị với các cạnh có trọng số
+start: nút bắt đầu tìm kiếm
+goal: nút đích đến  
+Khởi tạo hàng đợi và tập visited: ![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
+
+
+
 
 
 
