@@ -59,6 +59,45 @@ Gọi đồ thị mẫu 6 có trọng số, mỗi đỉnh liên kết với các
 Tìm đường đi BFS từ S đến H và in ra kết quả:  
 ![image](https://github.com/user-attachments/assets/ec60585f-5992-42bb-a68b-13eb3be78c94)  
 
+##### Đồ thị DFS trên đồ thị mẫu 6  
+
+Hàm DFS chính:  
+![image](https://github.com/user-attachments/assets/5dbd6b7c-6c65-47f6-9cad-0ba658f06aaf)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
+visited: các nút đã thăm  
+path: các nút đi qua  
+total_weight: tổng trọng số  
+
+Khởi tạo tập đã thăm và đường đi nếu chưa có:  
+![image](https://github.com/user-attachments/assets/fda1f8f4-5ef1-4c18-b9bb-631a75ce66fa)  
+
+Thêm đỉnh hiện tại vào tập đã thăm "visited.add(start)".  
+
+Nếu hiện tại là đích cần đến thì trả về đường đi và tổng trọng số:  
+![image](https://github.com/user-attachments/assets/48846b37-c6c1-482c-8905-a51259384621)  
+
+Duyệt các nút kề (DFS đệ quy):  
+![image](https://github.com/user-attachments/assets/6a3a72f6-010f-452a-907b-db990c8164de)  
+Duyệt các nút kề chưa được thăm, gọi đệ quy để tiếp tục DFS. Nếu tìm thấy đường đi thì trả về luôn.  
+
+Nếu không tìm thấy đường đi, trả về "return None, 0".  
+
+Gọi đồ thị mẫu 6 có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)  
+![image](https://github.com/user-attachments/assets/316e6cb2-2937-4df0-a3fd-7929ca926e09)  
+
+Tìm đường đi DFS từ S đến H và in ra kết quả:  
+![image](https://github.com/user-attachments/assets/c049cb37-488b-4cc2-b057-51464967693e)
+
+
+
+
+
+
+
+
+
 
 
 
