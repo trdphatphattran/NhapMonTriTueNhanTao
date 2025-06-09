@@ -35,8 +35,8 @@ graph TD
 
 Hàm BFS chính:  
 ![image](https://github.com/user-attachments/assets/a8c6a965-02be-407c-8378-79a32eeafb4b)  
-graph: đồ thị với các cạnh có trọng số
-start: nút bắt đầu tìm kiếm
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
 goal: nút đích đến  
 Khởi tạo hàng đợi và tập visited:  
 ![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
