@@ -12,6 +12,25 @@ Ngoài ra, còn làm quen với các loại đồ thị: không trọng số (c�
 ## Bài tập minh họa  
 ### Bài tập về nhà  
 #### Bài 1: Viết mã Python để chạy BFS và DFS trên **Đồ thị mẫu 6** và **Đồ thị mẫu 7**. Định nghĩa đồ thị dưới dạng từ điển và thêm chú thích chi tiết.  
+Đồ thị mẫu 6:  
+```mermaid
+graph TD
+    S -->|2| A
+    S -->|5| C
+    A -->|3| B
+    A -->|4| D
+    B -->|6| E
+    C -->|7| D
+    C -->|9| F
+    D -->|8| E
+    E -->|10| H
+    F -->|12| G
+    G -->|15| H
+```
+- **Các cạnh và trọng số**:
+  - S-A: 2, S-C: 5, A-B: 3, A-D: 4, B-E: 6, C-D: 7, C-F: 9, D-E: 8, E-H: 10, F-G: 12, G-H: 15.
+- **Đặc điểm**: Nhiều đường đi từ S đến H, có chu trình (A-D-E-B-A).
+- 
 
 
 
