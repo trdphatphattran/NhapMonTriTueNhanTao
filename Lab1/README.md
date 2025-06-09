@@ -93,6 +93,32 @@ Tìm đường đi DFS từ S đến H và in ra kết quả:
 ##### Kết quả khi chạy BFS và DFS:  
 ![image](https://github.com/user-attachments/assets/72151019-c646-4478-ab5a-33880e2f1ff8)  
 
+Đồ thị mẫu 7:  
+```mermaid
+graph TD
+    S --> A
+    S --> D
+    S --> E
+    A --> B
+    A --> D
+    A --> E
+    B --> C
+    B --> E
+    B --> F
+    C --> F
+    C --> G
+    D --> E
+    E --> F
+    E --> H
+    F --> G
+    F --> H
+    G --> H
+
+```
+- **Các cạnh**: S-A, S-D, S-E, A-B, A-D, A-E, B-C, B-E, B-F, C-F, C-G, D-E, E-F, E-H, F-G, F-H, G-H.
+- **Đặc điểm**: Mật độ cạnh cao, nhiều chu trình, nhiều đường đi từ S đến H.
+
+
 
 
 
