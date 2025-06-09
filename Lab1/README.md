@@ -30,7 +30,12 @@ graph TD
 - **Các cạnh và trọng số**:
   - S-A: 2, S-C: 5, A-B: 3, A-D: 4, B-E: 6, C-D: 7, C-F: 9, D-E: 8, E-H: 10, F-G: 12, G-H: 15.
 - **Đặc điểm**: Nhiều đường đi từ S đến H, có chu trình (A-D-E-B-A).
-- 
+
+** Đồ thị BFS trên đồ thị mẫu 6:  **  
+
+
+
+
 
 
 
