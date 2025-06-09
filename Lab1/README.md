@@ -46,7 +46,10 @@ Hàng đợi gồm có: node, path, total_weight.
 Vòng lặp chính:  
 ![image](https://github.com/user-attachments/assets/4d5c5f67-c444-42f9-b0f0-c9ef2067369e)  
 Nếu tìm được đích thì trả về đường đi và tổng trọng số  
-![image](https://github.com/user-attachments/assets/58d0f744-bd6d-4e68-88e5-c278eecb530e)  
+![image](https://github.com/user-attachments/assets/58d0f744-bd6d-4e68-88e5-c278eecb530e)    
+
+Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới và tổng trọng số mới.
+![image](https://github.com/user-attachments/assets/97d87895-9915-4007-a31e-40e87716b46b)  
 
 
 
