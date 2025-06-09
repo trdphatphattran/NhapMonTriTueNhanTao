@@ -33,12 +33,13 @@ graph TD
 
 Đồ thị BFS trên đồ thị mẫu 6:  
 
-Hàm BFS chính: ![image](https://github.com/user-attachments/assets/a8c6a965-02be-407c-8378-79a32eeafb4b)  
+Hàm BFS chính: 
+![image](https://github.com/user-attachments/assets/a8c6a965-02be-407c-8378-79a32eeafb4b)  
 graph: đồ thị với các cạnh có trọng số
 start: nút bắt đầu tìm kiếm
 goal: nút đích đến  
-
-Khởi tạo hàng đợi và tập visited: ![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
+Khởi tạo hàng đợi và tập visited: 
+![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
 
 
 
