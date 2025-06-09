@@ -88,7 +88,12 @@ Gọi đồ thị mẫu 6 có trọng số, mỗi đỉnh liên kết với các
 ![image](https://github.com/user-attachments/assets/316e6cb2-2937-4df0-a3fd-7929ca926e09)  
 
 Tìm đường đi DFS từ S đến H và in ra kết quả:  
-![image](https://github.com/user-attachments/assets/c049cb37-488b-4cc2-b057-51464967693e)
+![image](https://github.com/user-attachments/assets/c049cb37-488b-4cc2-b057-51464967693e)  
+
+##### Kết quả khi chạy BFS và DFS:  
+![image](https://github.com/user-attachments/assets/72151019-c646-4478-ab5a-33880e2f1ff8)  
+
+
 
 
 
