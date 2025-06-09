@@ -53,7 +53,7 @@ Duyệt các nút kề của node hiện tại, nếu neighbour chưa được t
 
 Nếu không tìm thấy đường đi, trả về "return None, 0".  
 
-Gọi đồ thị mẫu 6 có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)
+Gọi đồ thị mẫu 6 có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)  
 ![image](https://github.com/user-attachments/assets/316e6cb2-2937-4df0-a3fd-7929ca926e09)  
 
 Tìm đường đi BFS từ S đến H và in ra kết quả:  
