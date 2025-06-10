@@ -333,7 +333,14 @@ Tìm đường đi DFS từ S đến H và in ra kết quả:
 ![image](https://github.com/user-attachments/assets/96697dc2-1a3d-46b4-ae73-909f87dc9979)  
 
 ##### Kết quả khi chạy BFS và DFS:  
-![image](https://github.com/user-attachments/assets/f0d63db4-aa46-436b-9074-3f4b33042b54)
+![image](https://github.com/user-attachments/assets/f0d63db4-aa46-436b-9074-3f4b33042b54)  
+
+#### Phân tích sự thay đổi  
+- Đường đi BFS thay đổi từ [S, A, B, E, H] thành [S, A, B, H], tổng trọng số thay đổi từ 21 sang 25. Vì BFS không quan tâm đến trọng số, nó chỉ quan tâm đến số cạnh nên dù thêm B --> |20| H có thêm trọng số, nhưng [S, A, B, H] vẫn là đường đi ngắn nhất (dù trọng số lớn hơn).
+- Đường đi DFS không thay đổi, vẫn là [S, A, B, E, H] trọng số 21. Vì DFS tìm kiếm sâu theo nhánh nên các nút kề sẽ được duyệt thoe thứ tự trong danh sách. Vì E nằm trước H trong danh sách, nên DFS sẽ đi qua E trước rồi sau đó mới tới H.
+
+
+
 
 
 
