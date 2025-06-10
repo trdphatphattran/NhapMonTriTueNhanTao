@@ -340,6 +340,12 @@ Tìm đường đi DFS từ S đến H và in ra kết quả:
 - Đường đi DFS không thay đổi, vẫn là [S, A, B, E, H] trọng số 21. Vì DFS tìm kiếm sâu theo nhánh nên các nút kề sẽ được duyệt thoe thứ tự trong danh sách. Vì E nằm trước H trong danh sách, nên DFS sẽ đi qua E trước rồi sau đó mới tới H.
 
 
+### Bài tập nâng cao  
+#### Câu 1  
+
+
+
+
 
 
 
