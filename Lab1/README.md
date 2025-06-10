@@ -222,10 +222,11 @@ Khởi tạo hàng đợi và danh sách các đường đi từ start đến go
 ![image](https://github.com/user-attachments/assets/74c7a0a1-48df-4534-811f-52f71db995b4)  
 
 Vòng lặp chính:  
-![image](https://github.com/user-attachments/assets/4d5c5f67-c444-42f9-b0f0-c9ef2067369e)  
-Nếu tìm được đích thì trả về đường đi và tổng trọng số  
-![image](https://github.com/user-attachments/assets/58d0f744-bd6d-4e68-88e5-c278eecb530e)    
-
+![image](https://github.com/user-attachments/assets/4e2113bf-c147-4341-ac15-d6b161bff22a)  
+Nếu tìm được đích thì thêm vào danh sách  
+![image](https://github.com/user-attachments/assets/6f2ec599-c076-45cd-8a70-d3a0fe5be2d7)  
+Không return vì phải tìm tất cả đường đi, nên sẽ tiếp tục duyệt các phần tử còn lại
+   
 Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới và tổng trọng số mới.  
 ![image](https://github.com/user-attachments/assets/97d87895-9915-4007-a31e-40e87716b46b)  
 1. Khởi tạo: Hàng đợi = [(S, [S])], Đã thăm = {S}
