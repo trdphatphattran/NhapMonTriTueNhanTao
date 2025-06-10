@@ -239,7 +239,27 @@ Tìm tất cả đường đi BFS từ S đến H và in ra kết quả:
 ![image](https://github.com/user-attachments/assets/ae9ede55-ff53-4c97-9c36-84c70a6d1897)  
 
 ##### Kết quả:  
-![image](https://github.com/user-attachments/assets/b4264dce-5eaa-4eea-87a5-87be02b7a8ba)
+![image](https://github.com/user-attachments/assets/b4264dce-5eaa-4eea-87a5-87be02b7a8ba)  
+
+#### Bài 3  
+```mermaid
+graph TD
+    S -->|2| A
+    S -->|5| C
+    A -->|3| B
+    A -->|4| D
+    B -->|6| E
+    B -->|20| H
+    C -->|7| D
+    C -->|9| F
+    D -->|8| E
+    E -->|10| H
+    F -->|12| G
+    G -->|15| H
+```
+- **Các cạnh và trọng số**:
+  - S-A: 2, S-C: 5, A-B: 3, A-D: 4, B-E: 6, B-H: 20, C-D: 7, C-F: 9, D-E: 8, E-H: 10, F-G: 12, G-H: 15.
+
 
 
 
