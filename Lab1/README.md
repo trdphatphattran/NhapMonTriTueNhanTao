@@ -87,9 +87,15 @@ Thêm đỉnh hiện tại vào tập đã thăm "visited.add(start)".
 Nếu hiện tại là đích cần đến thì trả về đường đi và tổng trọng số:  
 ![image](https://github.com/user-attachments/assets/48846b37-c6c1-482c-8905-a51259384621)  
 
-Duyệt các nút kề (DFS đệ quy):  
+Duyệt các nút kề:  
 ![image](https://github.com/user-attachments/assets/6a3a72f6-010f-452a-907b-db990c8164de)  
 Duyệt các nút kề chưa được thăm, gọi đệ quy để tiếp tục DFS. Nếu tìm thấy đường đi thì trả về luôn.  
+1. Khởi tạo: Ngăn xếp = [(S, [S], 0)], Đã thăm = {S}
+2. Lấy S, thêm A: Ngăn xếp = [(A, [S, A], 2)], Đã thăm = {S, A}
+3. Lấy A, thêm B: Ngăn xếp = [(B, [S, A, B], 5)], Đã thăm = {S, A, B}
+4. Lấy B, thêm E: Ngăn xếp = [(E, [S, A, B, E], 11)], Đã thăm = {S, A, B, E}
+5. Lấy E, thêm H: Ngăn xếp = [(H, [S, A, B, E, H], 21)], Đã thăm = {S, A, B, E, H}
+6. Lấy H: H là đích, trả về [S, A, B, E, H], trọng số 21
 
 Nếu không tìm thấy đường đi, trả về "return None, 0".  
 
