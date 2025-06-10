@@ -227,24 +227,22 @@ Nếu tìm được đích thì thêm vào danh sách
 ![image](https://github.com/user-attachments/assets/6f2ec599-c076-45cd-8a70-d3a0fe5be2d7)  
 Không return vì phải tìm tất cả đường đi, nên sẽ tiếp tục duyệt các phần tử còn lại
    
-Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới và tổng trọng số mới.  
-![image](https://github.com/user-attachments/assets/97d87895-9915-4007-a31e-40e87716b46b)  
-1. Khởi tạo: Hàng đợi = [(S, [S])], Đã thăm = {S}
-2. Lấy S, thêm A, D, E: Hàng đợi = [(A, [S, A]), (D, [S, D]), (E, [S, E])], Đã thăm = {S, A, D, E}
-3. Lấy A, thêm B: Hàng đợi = [(D, [S, D]), (E, [S, E]), (B, [S, A, B])], Đã thăm = {S, A, D, E, B}
-4. Lấy D, không có kề mới (A, E đã thăm): Hàng đợi = [(E, [S, E]), (B, [S, A, B])]
-5. Lấy E, thêm F, H: Hàng đợi = [(B, [S, A, B]), (F, [S, E, F]), (H, [S, E, H])], Đã thăm = {S, A, D, E, B, F, H}
-6. Lấy B, thêm C: Hàng đợi = [(F, [S, E, F]), (H, [S, E, H]), (C, [S, A, B, C])], Đã thăm = {S, A, D, E, B, F, H, C}
-7. Lấy F, không có kề mới (G, H đã thăm hoặc chưa tới): Hàng đợi = [(H, [S, E, H]), (C, [S, A, B, C])]
-8. Lấy H: H là đích, trả về [S, E, H] 
+Duyệt các nút kề của node hiện tại, nếu neighbour không có đường đi hiện tại thì thêm nút kề và đường đi mới vào hàng đợi.  
+![image](https://github.com/user-attachments/assets/0ebeafe7-c960-415c-b66c-8de481a2a9bf)  
 
-Nếu không tìm thấy đường đi, trả về "return None, 0".  
+Sau khi tìm thấy đường đi thì trả về "return all_paths".  
 
-Gọi đồ thị mẫu 6 có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)  
-![image](https://github.com/user-attachments/assets/316e6cb2-2937-4df0-a3fd-7929ca926e09)  
+Gọi đồ thị mẫu 7 không trọng số  
+![image](https://github.com/user-attachments/assets/544e0f01-f553-4e55-ad0a-082a81784614)  
 
-Tìm đường đi BFS từ S đến H và in ra kết quả:  
-![image](https://github.com/user-attachments/assets/ec60585f-5992-42bb-a68b-13eb3be78c94)
+Tìm tất cả đường đi BFS từ S đến H và in ra kết quả:  
+![image](https://github.com/user-attachments/assets/ae9ede55-ff53-4c97-9c36-84c70a6d1897)  
+
+##### Kết quả:  
+![image](https://github.com/user-attachments/assets/b4264dce-5eaa-4eea-87a5-87be02b7a8ba)
+
+
+
 
 
 
