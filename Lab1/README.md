@@ -259,6 +259,91 @@ graph TD
 ```
 - **Các cạnh và trọng số**:
   - S-A: 2, S-C: 5, A-B: 3, A-D: 4, B-E: 6, B-H: 20, C-D: 7, C-F: 9, D-E: 8, E-H: 10, F-G: 12, G-H: 15.
+ 
+##### Đồ thị BFS  
+
+Hàm BFS chính:  
+![image](https://github.com/user-attachments/assets/a8c6a965-02be-407c-8378-79a32eeafb4b)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
+
+Khởi tạo hàng đợi và tập visited:  
+![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
+Hàng đợi gồm có: node, path, total_weight.  
+
+Vòng lặp chính:  
+![image](https://github.com/user-attachments/assets/4d5c5f67-c444-42f9-b0f0-c9ef2067369e)  
+Nếu tìm được đích thì trả về đường đi và tổng trọng số  
+![image](https://github.com/user-attachments/assets/58d0f744-bd6d-4e68-88e5-c278eecb530e)    
+
+Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới và tổng trọng số mới.  
+![image](https://github.com/user-attachments/assets/97d87895-9915-4007-a31e-40e87716b46b)  
+1. Khởi tạo: Hàng đợi = [(S, [S], 0)], Đã thăm = {S}
+2. Lấy S, thêm A, C: Hàng đợi = [(A, [S, A], 2), (C, [S, C], 5)], Đã thăm = {S, A, C}
+3. Lấy A, thêm B, D: Hàng đợi = [(B, [S, A, B], 5), (C, [S, C], 5), (D, [S, A, D], 6)], Đã thăm = {S, A, C, B, D}
+4. Lấy C, thêm F: Hàng đợi = [(B, [S, A, B], 5), (F, [S, C, F], 14), (D, [S, A, D], 6)], Đã thăm = {S, A, C, B, D, F}
+5. Lấy B, thêm E, H: Hàng đợi = [(E, [S, A, B, E], 11), (H, [S, A, B, H], 25), (F, [S, C, F], 14), (D, [S, A, D], 6)], Đã thăm = {S, A, C, B, D, F, E, H}
+6. Lấy D, không có kề mới: Hàng đợi = [(F, [S, C, F], 14), (E, [S, A, B, E], 11)]
+7. Lấy F, thêm G: Hàng đợi = [(E, [S, A, B, E], 11), (H, [S, A, B, H], 25), (G, [S, C, F, G], 26)], Đã thăm = {S, A, C, B, D, F, E, H, G}
+8. Lấy E, thêm H: H là đích, trả về [S, A, B, H], 25  
+
+Nếu không tìm thấy đường đi, trả về "return None, 0".  
+
+Gọi đồ thị mẫu 6 có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)  
+![image](https://github.com/user-attachments/assets/bb5269a4-3c1a-470f-9b6a-88c885935936)  
+  
+Tìm đường đi BFS từ S đến H và in ra kết quả:  
+![image](https://github.com/user-attachments/assets/571e516c-9c4b-433f-8e52-ea30df592837)  
+
+##### Đồ thị DFS  
+Hàm DFS chính:  
+![image](https://github.com/user-attachments/assets/5dbd6b7c-6c65-47f6-9cad-0ba658f06aaf)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
+visited: các nút đã thăm  
+path: các nút đi qua  
+total_weight: tổng trọng số  
+
+Khởi tạo tập đã thăm và đường đi nếu chưa có:  
+![image](https://github.com/user-attachments/assets/fda1f8f4-5ef1-4c18-b9bb-631a75ce66fa)  
+
+Thêm đỉnh hiện tại vào tập đã thăm "visited.add(start)".  
+
+Nếu hiện tại là đích cần đến thì trả về đường đi và tổng trọng số:  
+![image](https://github.com/user-attachments/assets/48846b37-c6c1-482c-8905-a51259384621)  
+
+Duyệt các nút kề:  
+![image](https://github.com/user-attachments/assets/6a3a72f6-010f-452a-907b-db990c8164de)  
+Duyệt các nút kề chưa được thăm, gọi đệ quy để tiếp tục DFS. Nếu tìm thấy đường đi thì trả về luôn.  
+1. Khởi tạo: Ngăn xếp = [(S, [S], 0)], Đã thăm = {S}
+2. Lấy S, thêm A: Ngăn xếp = [(A, [S, A], 2)], Đã thăm = {S, A}
+3. Lấy A, thêm B: Ngăn xếp = [(B, [S, A, B], 5)], Đã thăm = {S, A, B}
+4. Lấy B, thêm E: Ngăn xếp = [(E, [S, A, B, E], 11)], Đã thăm = {S, A, B, E}
+5. Lấy E, thêm H: Ngăn xếp = [(H, [S, A, B, E, H], 21)], Đã thăm = {S, A, B, E, H}
+6. Lấy H: H là đích, trả về [S, A, B, E, H], trọng số 21
+
+Nếu không tìm thấy đường đi, trả về "return None, 0".  
+
+Gọi đồ thị mẫu 6 có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)  
+![image](https://github.com/user-attachments/assets/9a1fe046-574f-48fa-b327-45fd0bf73bcf)  
+  
+Tìm đường đi DFS từ S đến H và in ra kết quả:  
+![image](https://github.com/user-attachments/assets/96697dc2-1a3d-46b4-ae73-909f87dc9979)  
+
+##### Kết quả khi chạy BFS và DFS:  
+![image](https://github.com/user-attachments/assets/f0d63db4-aa46-436b-9074-3f4b33042b54)
+
+
+
+
+
+
+ 
+
+ 
+  
 
 
 
