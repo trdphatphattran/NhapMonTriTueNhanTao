@@ -209,7 +209,12 @@ Tìm đường đi DFS từ S đến H và in ra kết quả:
 ![image](https://github.com/user-attachments/assets/c049cb37-488b-4cc2-b057-51464967693e)  
 
 ##### Kết quả khi chạy BFS và DFS:  
-![image](https://github.com/user-attachments/assets/72151019-c646-4478-ab5a-33880e2f1ff8)  
+![image](https://github.com/user-attachments/assets/943497ed-16a9-4077-8707-4256ce99b958)  
+
+#### Bài 2  
+
+
+  
 
 
 
