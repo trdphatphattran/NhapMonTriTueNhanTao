@@ -48,7 +48,7 @@ Vòng lặp chính:
 Nếu tìm được đích thì trả về đường đi và tổng trọng số  
 ![image](https://github.com/user-attachments/assets/58d0f744-bd6d-4e68-88e5-c278eecb530e)    
 
-Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới và tổng trọng số mới.
+Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới và tổng trọng số mới.  
 ![image](https://github.com/user-attachments/assets/97d87895-9915-4007-a31e-40e87716b46b)  
 
 Nếu không tìm thấy đường đi, trả về "return None, 0".  
