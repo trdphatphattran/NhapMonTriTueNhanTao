@@ -167,7 +167,7 @@ Gọi đồ thị mẫu 7
 ![image](https://github.com/user-attachments/assets/8afd4dcd-e685-4a0c-b71f-99ca6f9f5455)
 
 Tìm đường đi BFS từ S đến H và in ra kết quả:  
-![image](https://github.com/user-attachments/assets/ec60585f-5992-42bb-a68b-13eb3be78c94)  
+![image](https://github.com/user-attachments/assets/805d0707-5916-4955-a968-efdb26b44cf8)  
 
 ##### Đồ thị DFS trên đồ thị mẫu 7  
 
@@ -206,7 +206,7 @@ Gọi đồ thị mẫu 7
 ![image](https://github.com/user-attachments/assets/de01fb96-258d-4329-89dd-f3a21b390480)  
  
 Tìm đường đi DFS từ S đến H và in ra kết quả:  
-![image](https://github.com/user-attachments/assets/c049cb37-488b-4cc2-b057-51464967693e)  
+![image](https://github.com/user-attachments/assets/352fa980-535f-4fc1-8e6b-1e32780416de)
 
 ##### Kết quả khi chạy BFS và DFS:  
 ![image](https://github.com/user-attachments/assets/943497ed-16a9-4077-8707-4256ce99b958)  
