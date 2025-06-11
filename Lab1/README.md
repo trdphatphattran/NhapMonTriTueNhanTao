@@ -612,7 +612,48 @@ Gọi đồ thị có trọng số, mỗi đỉnh liên kết với các cặp (
 ![image](https://github.com/user-attachments/assets/e5337010-f4a5-4c43-ac14-b31612b28e25)  
 
 Tìm đường đi BFS từ S đến I và in ra kết quả:  
-![image](https://github.com/user-attachments/assets/8b603998-a962-4632-b532-6089bdfb6608)
+![image](https://github.com/user-attachments/assets/8b603998-a962-4632-b532-6089bdfb6608)  
+
+##### Đồ thị DFS   
+
+Hàm DFS chính:  
+![image](https://github.com/user-attachments/assets/5dbd6b7c-6c65-47f6-9cad-0ba658f06aaf)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
+visited: các nút đã thăm  
+path: các nút đi qua  
+total_weight: tổng trọng số  
+
+Khởi tạo tập đã thăm và đường đi nếu chưa có:  
+![image](https://github.com/user-attachments/assets/fda1f8f4-5ef1-4c18-b9bb-631a75ce66fa)  
+
+Thêm đỉnh hiện tại vào tập đã thăm "visited.add(start)".  
+
+Nếu hiện tại là đích cần đến thì trả về đường đi và tổng trọng số:  
+![image](https://github.com/user-attachments/assets/48846b37-c6c1-482c-8905-a51259384621)  
+
+Duyệt các nút kề:  
+![image](https://github.com/user-attachments/assets/6a3a72f6-010f-452a-907b-db990c8164de)  
+Duyệt các nút kề chưa được thăm, gọi đệ quy để tiếp tục DFS. Nếu tìm thấy đường đi thì trả về luôn.  
+1. Khởi tạo: Ngăn xếp = [(S, [S], 0)], Đã thăm = {S}
+2. Lấy S, thêm A: Ngăn xếp = [(A, [S, A], 2)], Đã thăm = {S, A}
+3. Lấy A, thêm C: Ngăn xếp = [(C, [S, A, C], 5)], Đã thăm = {S, A, C}
+4. Lấy C, thêm F: Ngăn xếp = [(F, [S, A, C, F], 15)], Đã thăm = {S, A, C, F}
+5. Lấy F, thêm I: I là đích, trả về [S, A, C, F, I], trọng số: 26  
+
+Nếu không tìm thấy đường đi, trả về "return None, 0".  
+
+Gọi đồ thị có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)  
+![image](https://github.com/user-attachments/assets/df88fe1c-b193-4f42-82c3-031a1224ede4)  
+
+Tìm đường đi DFS từ S đến H và in ra kết quả:  
+![image](https://github.com/user-attachments/assets/47730851-59e8-47cf-9991-42118ca6f95e)
+
+##### Kết quả khi chạy BFS và DFS:  
+![image](https://github.com/user-attachments/assets/fd2cb138-ebc2-4db0-9107-bd47c80d8535)
+
+
 
 
 
