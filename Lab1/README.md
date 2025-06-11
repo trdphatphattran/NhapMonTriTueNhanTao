@@ -136,7 +136,7 @@ graph TD
 ##### Đồ thị BFS trên đồ thị mẫu 7  
 
 Hàm BFS chính:  
-![image](https://github.com/user-attachments/assets/a8c6a965-02be-407c-8378-79a32eeafb4b)  
+![image](https://github.com/user-attachments/assets/7222627e-0e11-4e42-b838-da1cbfe63a0e)  
 graph: đồ thị với các cạnh có trọng số  
 start: nút bắt đầu tìm kiếm  
 goal: nút đích đến  
@@ -172,7 +172,7 @@ Tìm đường đi BFS từ S đến H và in ra kết quả:
 ##### Đồ thị DFS trên đồ thị mẫu 7  
 
 Hàm DFS chính:  
-![image](https://github.com/user-attachments/assets/5dbd6b7c-6c65-47f6-9cad-0ba658f06aaf)  
+![image](https://github.com/user-attachments/assets/1b08fb78-c7e4-4465-866f-0ad63fcda493)  
 graph: đồ thị với các cạnh có trọng số  
 start: nút bắt đầu tìm kiếm  
 goal: nút đích đến  
