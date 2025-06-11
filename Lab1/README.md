@@ -189,7 +189,7 @@ Nếu hiện tại là đích cần đến thì trả về đường đi:
 ![image](https://github.com/user-attachments/assets/20607bfe-5e12-4cbf-945c-5db336838b6f)
 
 Duyệt các nút kề:  
-![image](https://github.com/user-attachments/assets/93d7e092-e6d9-4cef-b1b6-96822a9d24e2)
+![image](https://github.com/user-attachments/assets/93d7e092-e6d9-4cef-b1b6-96822a9d24e2)  
 Duyệt các nút kề chưa được thăm, gọi đệ quy để tiếp tục DFS. Nếu tìm thấy đường đi thì trả về luôn.  
 1. Khởi tạo: Ngăn xếp = [(S, [S])], Đã thăm = {S}
 2. Lấy S, thêm A: Ngăn xếp = [(A, [S, A])], Đã thăm = {S, A}
