@@ -164,7 +164,7 @@ Duyệt các nút kề của node hiện tại, nếu neighbour chưa được t
 Nếu không tìm thấy đường đi, trả về "return None, 0".  
 
 Gọi đồ thị mẫu 7  
-![image](https://github.com/user-attachments/assets/316e6cb2-2937-4df0-a3fd-7929ca926e09)  
+![image](https://github.com/user-attachments/assets/8afd4dcd-e685-4a0c-b71f-99ca6f9f5455)
 
 Tìm đường đi BFS từ S đến H và in ra kết quả:  
 ![image](https://github.com/user-attachments/assets/ec60585f-5992-42bb-a68b-13eb3be78c94)  
@@ -202,9 +202,9 @@ Duyệt các nút kề chưa được thăm, gọi đệ quy để tiếp tục 
 
 Nếu không tìm thấy đường đi, trả về "return None, 0".  
 
-Gọi đồ thị mẫu 6 có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)  
-![image](https://github.com/user-attachments/assets/316e6cb2-2937-4df0-a3fd-7929ca926e09)  
-
+Gọi đồ thị mẫu 7   
+![image](https://github.com/user-attachments/assets/de01fb96-258d-4329-89dd-f3a21b390480)  
+ 
 Tìm đường đi DFS từ S đến H và in ra kết quả:  
 ![image](https://github.com/user-attachments/assets/c049cb37-488b-4cc2-b057-51464967693e)  
 
