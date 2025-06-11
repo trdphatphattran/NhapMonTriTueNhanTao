@@ -610,7 +610,7 @@ Duyệt các nút kề của node hiện tại, nếu neighbour chưa được t
 Nếu không tìm thấy đường đi, trả về "return None, 0".  
 
 Gọi đồ thị có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)  
-![image](https://github.com/user-attachments/assets/49f571c5-cc8c-473b-a634-3a568c86f5f7)
+![image](https://github.com/user-attachments/assets/e5337010-f4a5-4c43-ac14-b31612b28e25)  
 
 Tìm đường đi BFS từ S đến I và in ra kết quả:  
 ![image](https://github.com/user-attachments/assets/8b603998-a962-4632-b532-6089bdfb6608)
