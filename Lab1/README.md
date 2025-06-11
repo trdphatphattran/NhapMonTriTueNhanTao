@@ -138,6 +138,13 @@ Nếu tìm được đích, thì trả về đường đi và in ra các nút đ
 
 Duyệt qua các nút kề của nút hiện tại, nếu nút kề chưa được thăm thì thêm nút kề vào tập đã thăm và thêm nút kề và đường đi mới vào hàng đợi, tăng count vì đã tăng thêm một nút.  
 ![image](https://github.com/user-attachments/assets/6eceeeb0-5df2-48ff-88c3-58ac4f37ce2b)  
+1. Khởi tạo: Hàng đợi = [(S, [S])], Đã thăm = {S}  
+2. Lấy S, thêm A, C: Hàng đợi = [(A, [S, A]), (C, [S, C])], Đã thăm = {S, A, C}  
+3. Lấy A, thêm B, D: Hàng đợi = [(B, [S, A, B]), (D, [S, A, D]), (C, [S, C])], Đã thăm = {S, A, C, B, D} 
+4. Lấy C, thêm F: Hàng đợi = [(B, [S, A, B]), (D, [S, A, D]), (F, [S, C, F])], Đã thăm = {S, A, C, B, D, F}  
+5. Lấy B, thêm E: Hàng đợi = [(E, [S, A, B, E]), (D, [S, A, D]), (F, [S, C, F])], Đã thăm = {S, A, C, B, D, F, E}  
+6. Lấy D không có kề mới: Hàng đợi = [(E, [S, A, B, E]), (F, [S, C, F])]
+7. Lấy F, thêm G: G là đích, trả về (G, [S, C, F, G])
 
 Nếu không tìm thấy đường đi, thì trả về None và in ra tất cả các nút đã thăm.  
 ![image](https://github.com/user-attachments/assets/47df3bd3-f057-4ea6-a620-c9c8728f7a8c)  
