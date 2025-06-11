@@ -10,6 +10,26 @@ Trong bài lab này sử dụng 2 thuật toán: tìm kiếm theo chiều rộng
 Ngoài ra, còn làm quen với các loại đồ thị: không trọng số (các cạnh có trọng số ngầm định bằng 1, BFS tối ưu theo số cạnh) và có trọng số (các cạnh có trọng số khác nhau, BFS và DFS không được thiết kế để tối ưu hóa tổng trọng số, dẫn đến kết quả không tối ưu).  
 
 ## Bài tập minh họa  
+
+### Đồ thị mẫu 2  
+
+```mermaid
+graph TD
+    S --> A
+    S --> B
+    A --> B
+    A --> C
+    B --> D
+    C --> D
+    D --> G
+```
+- **Các cạnh**: S-A, S-B, A-B, A-C, B-D, C-D, D-G.
+
+#### Đồ thị BFS trên đồ thị mẫu 2  
+
+
+
+
 ### Bài tập về nhà  
 #### Bài 1: Viết mã Python để chạy BFS và DFS trên **Đồ thị mẫu 6** và **Đồ thị mẫu 7**. Định nghĩa đồ thị dưới dạng từ điển và thêm chú thích chi tiết.  
 Đồ thị mẫu 6:  
