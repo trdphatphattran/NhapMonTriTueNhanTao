@@ -555,6 +555,28 @@ Kết quả khi chạy:
 - BFS đi chậm hơn DFS vì BFS phải duyệt tất cả các đỉnh cùng mức, có nghĩa là nó sẽ thăm nhiều đỉnh hơn trước khi đến đích -> tốn nhiều thời gian. DFS đi sâu theo nhánh mà không cần duyệt các đỉnh cùng mức, nên nó sẽ chỉ đi qua một vài đỉnh trước khi đến đích -> tốn ít thời gian.
 - DFS đi chậm hơn BFS vì DFS đôi khi có thể đi sai nhánh thì phải quay lại đi từ đầu để tiếp tục thử nhánh khác -> tốn nhiều thời gian. BFS duyệt theo mức nên nếu đích nằm gần điểm bắt đầu thì BFS sẽ tìm thấy nhanh hơn -> tốn ít thời gian.
 
+#### Câu 2  
+```mermaid
+graph TD
+    S -> |2|A
+    S -> |4|B
+    S -> |5|C
+    A -> |3|C
+    A -> |7|B
+    B -> |9|D
+    B -> |12|C
+    C -> |10|E
+    C -> |8|G
+    D -> |15|G
+    E -> |7|H
+    E -> |5|I
+    F -> |8|G
+    F -> |16|H
+    G -> |11|H
+    G -> |7|I
+```
+
+
 
 
 
