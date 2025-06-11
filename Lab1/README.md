@@ -57,11 +57,50 @@ Nếu không tìm thấy đường đi, trả về "return None, 0".
 Gọi đồ thị mẫu 2    
 ![image](https://github.com/user-attachments/assets/3cdd1d7e-9af0-468b-b7cf-af8e35a22dc1)  
 
-Tìm đường đi BFS từ S đến H và in ra kết quả:  
+Tìm đường đi BFS từ S đến G và in ra kết quả:  
 ![image](https://github.com/user-attachments/assets/ef733b1a-3ce4-4269-9191-fd43b0abf1f1)  
 
 Kết quả khi chạy:  
 ![image](https://github.com/user-attachments/assets/ed873f25-7c56-4abe-b9a4-b1cb8aa65792)  
+
+#### Đồ thị DFS trên đồ thị mẫu 2  
+
+Hàm DFS chính:  
+![image](https://github.com/user-attachments/assets/1b08fb78-c7e4-4465-866f-0ad63fcda493)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
+visited: các nút đã thăm  
+path: các nút đi qua  
+
+Khởi tạo tập đã thăm và đường đi nếu chưa có:  
+![image](https://github.com/user-attachments/assets/fda1f8f4-5ef1-4c18-b9bb-631a75ce66fa)  
+
+Thêm đỉnh hiện tại vào tập đã thăm "visited.add(start)".  
+
+Nếu hiện tại là đích cần đến thì trả về đường đi:  
+![image](https://github.com/user-attachments/assets/20607bfe-5e12-4cbf-945c-5db336838b6f)
+
+Duyệt các nút kề:  
+![image](https://github.com/user-attachments/assets/93d7e092-e6d9-4cef-b1b6-96822a9d24e2)  
+Duyệt các nút kề chưa được thăm, gọi đệ quy để tiếp tục DFS. Nếu tìm thấy đường đi thì trả về luôn.  
+1. Khởi tạo: Ngăn xếp = [(S, [S])], Đã thăm = {S}
+2. Lấy S, thêm A: Ngăn xếp = [(A, [S, A])], Đã thăm = {S, A}
+3. Lấy A, thêm B: Ngăn xếp = [(B, [S, A, B])], Đã thăm = {S, A, B}
+4. Lấy B, thêm D: Ngăn xếp = [(D, [S, A, B, D])], Đã thăm = {S, A, B, D}
+5. Lấy D, thêm G: Ngăn xếp = [(G, [S, A, B, D, G])], Đã thăm = {S, A, B, D, G}
+8. Lấy G: G là đích, trả về [S, A, B, D, G]  
+
+Nếu không tìm thấy đường đi, trả về "return None, 0".  
+
+Gọi đồ thị mẫu 2     
+![image](https://github.com/user-attachments/assets/c0a2dab7-310b-460c-9367-f8e51eef3db6)  
+
+Tìm đường đi DFS từ S đến G và in ra kết quả:  
+![image](https://github.com/user-attachments/assets/d164a0ce-bdb0-4d57-aec9-557fdd570022)  
+
+Kết quả khi chạy:  
+![image](https://github.com/user-attachments/assets/81f7752c-b029-4c26-a4e2-935d1bd0d177)  
 
 ### Bài tập về nhà  
 #### Bài 1: Viết mã Python để chạy BFS và DFS trên **Đồ thị mẫu 6** và **Đồ thị mẫu 7**. Định nghĩa đồ thị dưới dạng từ điển và thêm chú thích chi tiết.  
@@ -231,7 +270,6 @@ start: nút bắt đầu tìm kiếm
 goal: nút đích đến  
 visited: các nút đã thăm  
 path: các nút đi qua  
-total_weight: tổng trọng số  
 
 Khởi tạo tập đã thăm và đường đi nếu chưa có:  
 ![image](https://github.com/user-attachments/assets/fda1f8f4-5ef1-4c18-b9bb-631a75ce66fa)  
