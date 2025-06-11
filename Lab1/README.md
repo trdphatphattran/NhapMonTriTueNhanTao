@@ -147,7 +147,7 @@ Hàng đợi gồm có: node, path, total_weight.
 
 Vòng lặp chính:  
 ![image](https://github.com/user-attachments/assets/4d5c5f67-c444-42f9-b0f0-c9ef2067369e)  
-Nếu tìm được đích thì trả về đường đi 
+Nếu tìm được đích thì trả về đường đi  
 ![image](https://github.com/user-attachments/assets/7522cb34-9111-4cef-91f6-04a1a7e189bf)
  
 Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới.  
