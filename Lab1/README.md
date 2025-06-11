@@ -548,6 +548,16 @@ time_dfs = end_dfs - start_dfs: thời gian chạy thực tế = thời gian k�
 
 Sau cùng, in ra thời gian chạy thực tế và làm tròn đến 5 chữ số thập phân {time_bds:.5f}.  
 
+So sánh thời gian của BFS và DFS  
+![image](https://github.com/user-attachments/assets/5d2709c3-d58e-4e28-9445-e1ad08c3f220)  
+
+Kết quả khi chạy:  
+![image](https://github.com/user-attachments/assets/3427c611-ab62-490d-a91f-4df26c19bc10)  
+
+BFS chạy chậm hơn DFS vì lí do sau: 
+
+
+
 
 
 
