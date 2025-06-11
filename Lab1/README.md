@@ -490,13 +490,13 @@ Tìm đường đi BFS từ S đến H và in ra kết quả:
 Đo thời gian chạy của BFS  
 start_bfs: thời điểm bắt đầu chạy của thuật toán, ở đây sử dụng hàm time.perf_counter() vì hàm này cho độ chính xác cao khi đo thời gian.  
 
-path_bfs, weight_bfs: trả về các đỉnh được tạo trên đường đi từ S -> H và tổng trọng số của nó.  
+path_bfs: trả về các đỉnh được tạo trên đường đi từ S -> H.  
 
 end_bfs: thời điểm kết thúc của thuật toám, ở đây cũng sử dụng hàm time.perf_counter().  
 
 time_bfs = end_bfs - start_bfs: thời gian chạy thực tế = thời gian kết thúc = thời gian bắt đầu.  
 
-Sau cùng, in ra thời gian chạy thực tế và làm tròn đến 5 chữ số thập phân {time_bfs:.5f}.  
+Sau cùng, in ra thời gian chạy thực tế và làm tròn đến 7 chữ số thập phân {time_bfs:.7f}.  
 
 ##### Đo thời gian chạy của DFS trên đồ thị mẫu 7  
 
@@ -535,7 +535,17 @@ Gọi đồ thị mẫu 7
 ![image](https://github.com/user-attachments/assets/de01fb96-258d-4329-89dd-f3a21b390480)  
  
 Tìm đường đi DFS từ S đến H và in ra kết quả:  
-![image](https://github.com/user-attachments/assets/352fa980-535f-4fc1-8e6b-1e32780416de)
+![image](https://github.com/user-attachments/assets/352fa980-535f-4fc1-8e6b-1e32780416de)  
+
+start_dfs: thời điểm bắt đầu chạy của thuật toán, ở đây sử dụng hàm time.perf_counter() vì hàm này cho độ chính xác cao khi đo thời gian.  
+
+path_dfs: trả về các đỉnh được tạo trên đường đi từ S -> H.  
+
+end_dfs: thời điểm kết thúc của thuật toám, ở đây cũng sử dụng hàm time.perf_counter().  
+
+time_dfs = end_dfs - start_dfs: thời gian chạy thực tế = thời gian kết thúc = thời gian bắt đầu.  
+
+Sau cùng, in ra thời gian chạy thực tế và làm tròn đến 7 chữ số thập phân {time_dfs:.7f}.  
 
 
 BFS chạy chậm hơn DFS vì lí do sau: 
