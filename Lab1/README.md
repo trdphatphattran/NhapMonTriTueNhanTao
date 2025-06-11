@@ -158,6 +158,74 @@ Chạy và in ra kết quả
 Kết quả khi chạy:  
 ![image](https://github.com/user-attachments/assets/6418191d-5261-4c45-8709-05b8adc10565)  
 
+#### Vẽ đồ thị hiển thị đường đi  
+
+Hàm BFS chính:  
+![image](https://github.com/user-attachments/assets/7222627e-0e11-4e42-b838-da1cbfe63a0e)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
+
+Khởi tạo hàng đợi và tập visited:  
+![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
+Hàng đợi gồm có: node, path.  
+
+Đếm số nút đã thăm, bắt đầu với 1: "count = 1".  
+
+Vòng lặp chính:  
+![image](https://github.com/user-attachments/assets/f956cbb5-3043-4904-884b-67d03b7c775c)  
+Nếu tìm được đích, thì trả về đường đi và in ra các nút đã thăm  
+![image](https://github.com/user-attachments/assets/bd442cec-41de-497f-ade5-7f1fcd2b5168)  
+
+Duyệt qua các nút kề của nút hiện tại, nếu nút kề chưa được thăm thì thêm nút kề vào tập đã thăm và thêm nút kề và đường đi mới vào hàng đợi, tăng count vì đã tăng thêm một nút.  
+![image](https://github.com/user-attachments/assets/6eceeeb0-5df2-48ff-88c3-58ac4f37ce2b)  
+1. Khởi tạo: Hàng đợi = [(S, [S])], Đã thăm = {S}  
+2. Lấy S, thêm A, C: Hàng đợi = [(A, [S, A]), (C, [S, C])], Đã thăm = {S, A, C}  
+3. Lấy A, thêm B, D: Hàng đợi = [(B, [S, A, B]), (D, [S, A, D]), (C, [S, C])], Đã thăm = {S, A, C, B, D} 
+4. Lấy C, thêm F: Hàng đợi = [(B, [S, A, B]), (D, [S, A, D]), (F, [S, C, F])], Đã thăm = {S, A, C, B, D, F}  
+5. Lấy B, thêm E: Hàng đợi = [(E, [S, A, B, E]), (D, [S, A, D]), (F, [S, C, F])], Đã thăm = {S, A, C, B, D, F, E}  
+6. Lấy D không có kề mới: Hàng đợi = [(E, [S, A, B, E]), (F, [S, C, F])]
+7. Lấy F, thêm G: G là đích, trả về (G, [S, C, F, G])
+
+Nếu không tìm thấy đường đi, thì trả về None và in ra tất cả các nút đã thăm.  
+![image](https://github.com/user-attachments/assets/47df3bd3-f057-4ea6-a620-c9c8728f7a8c)  
+
+Gọi đồ thị mẫu 4  
+![image](https://github.com/user-attachments/assets/21ad340f-3bb8-4e41-bfb9-1ecd01b68c94)  
+
+Chạy và in ra kết quả  
+![image](https://github.com/user-attachments/assets/55768504-20da-42c2-8bb6-a653ba4a6bf8)  
+
+Khai báo thư viện:  
+![image](https://github.com/user-attachments/assets/b9f285e1-22f1-44cc-b8b6-a27f447a0e03)  
+
+Tạo đồ thị có hướng, sử dụng DiGraph().  
+
+Thêm các cạnh:  
+![image](https://github.com/user-attachments/assets/1740396c-e491-4b4e-89d1-e6015b8fa964)  
+Mỗi cặp (node, neighbor) được thêm vào đồ thị G dưới dạng cạnh có hướng từ node đến neighbor.  
+
+Tạo layout:  "pos = nx.spring_layout(G, seed=42)"  
+Dùng thuật toán spring_layout để bố trí nút, seed = 42 để đảm bảo bố cục ổn định.  
+
+Vẽ đồ thị:  
+![image](https://github.com/user-attachments/assets/883824d4-857b-423b-8996-f5609474d7a8)  
+with_labels=True: hiện nhãn các đỉnh.  
+node_color='lightblue': màu của các đỉnh mặc định.  
+edge_color='gray': màu các cạnh bình thường.  
+node_size, font_size, arrowsize: điều chỉnh kích cỡ nút, chữ, mũi tên.  
+
+Các cộng trong đường đi sẽ có màu đỏ  
+![image](https://github.com/user-attachments/assets/4ab53b2a-5a41-4221-a88f-5f75a8ee33d2)  
+Các đỉnh thuộc đường đi được tô màu cam  
+![image](https://github.com/user-attachments/assets/f2c29233-91fc-48ce-b061-adf9fb13a7e1)  
+
+Đặt tiêu đề và hiển thị hình ảnh  
+![image](https://github.com/user-attachments/assets/a62d0fd6-7870-4f41-8412-07b71a28cca3)  
+
+Kết quả khi chạy:  
+![image](https://github.com/user-attachments/assets/3a038317-30da-442f-823a-b9fb1539b1ab)  
+
 ### Bài tập về nhà  
 #### Bài 1: Viết mã Python để chạy BFS và DFS trên **Đồ thị mẫu 6** và **Đồ thị mẫu 7**. Định nghĩa đồ thị dưới dạng từ điển và thêm chú thích chi tiết.  
 Đồ thị mẫu 6:  
