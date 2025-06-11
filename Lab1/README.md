@@ -146,7 +146,7 @@ Khởi tạo hàng đợi và tập visited:
 Hàng đợi gồm có: node, path, total_weight.  
 
 Vòng lặp chính:  
-![image](https://github.com/user-attachments/assets/887f732f-60d5-48e2-a9ac-cb49b4510a94)
+![image](https://github.com/user-attachments/assets/887f732f-60d5-48e2-a9ac-cb49b4510a94)  
 Nếu tìm được đích thì trả về đường đi  
 ![image](https://github.com/user-attachments/assets/7522cb34-9111-4cef-91f6-04a1a7e189bf)
  
