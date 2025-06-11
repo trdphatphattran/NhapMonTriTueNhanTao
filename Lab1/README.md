@@ -579,6 +579,44 @@ graph TD
 Các cạnh: S-A: 2, S-B: 4, S-C: 5, A-C: 3, A-B: 7, B-D: 9, B-C: 12, C-E: 10, C-G: 8, D-G: 15, E-H: 7, E-I: 5, F-G: 8, F-H: 16, G-H: 11, G-I: 7.  
 Đường đi: Từ S -> I.  
 
+##### Đồ thị BFS  
+
+Hàm BFS chính:  
+![image](https://github.com/user-attachments/assets/a8c6a965-02be-407c-8378-79a32eeafb4b)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
+
+Khởi tạo hàng đợi và tập visited:  
+![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
+Hàng đợi gồm có: node, path, total_weight.  
+
+Vòng lặp chính:  
+![image](https://github.com/user-attachments/assets/4d5c5f67-c444-42f9-b0f0-c9ef2067369e)  
+Nếu tìm được đích thì trả về đường đi và tổng trọng số  
+![image](https://github.com/user-attachments/assets/58d0f744-bd6d-4e68-88e5-c278eecb530e)    
+
+Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới và tổng trọng số mới.  
+![image](https://github.com/user-attachments/assets/97d87895-9915-4007-a31e-40e87716b46b)  
+1. Khởi tạo: Hàng đợi = [(S, [S], 0)], Đã thăm = {S}
+2. Lấy S, thêm A, C: Hàng đợi = [(A, [S, A], 2), (C, [S, C], 5)], Đã thăm = {S, A, C}
+3. Lấy A, thêm B, D: Hàng đợi = [(B, [S, A, B], 5), (C, [S, C], 5), (D, [S, A, D], 6)], Đã thăm = {S, A, C, B, D}
+4. Lấy C, thêm F: Hàng đợi = [(B, [S, A, B], 5), (F, [S, C, F], 14), (D, [S, A, D], 6)], Đã thăm = {S, A, C, B, D, F}
+5. Lấy B, thêm E: Hàng đợi = [(E, [S, A, B, E], 11), (F, [S, C, F], 14), (D, [S, A, D], 6)], Đã thăm = {S, A, C, B, D, F, E}
+6. Lấy D, không có kề mới: Hàng đợi = [(F, [S, C, F], 14), (E, [S, A, B, E], 11)]
+7. Lấy F, thêm G: Hàng đợi = [(E, [S, A, B, E], 11), (G, [S, C, F, G], 26)], Đã thăm = {S, A, C, B, D, F, E, G}
+8. Lấy E, thêm H: Hàng đợi = [(G, [S, C, F, G], 26), (H, [S, A, B, E, H], 21)], Đã thăm = {S, A, C, B, D, F, E, G, H}
+9. Lấy H: H là đích, trả về [S, A, B, E, H], trọng số 21  
+
+Nếu không tìm thấy đường đi, trả về "return None, 0".  
+
+Gọi đồ thị có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)  
+![image](https://github.com/user-attachments/assets/49f571c5-cc8c-473b-a634-3a568c86f5f7)
+
+Tìm đường đi BFS từ S đến I và in ra kết quả:  
+![image](https://github.com/user-attachments/assets/ec60585f-5992-42bb-a68b-13eb3be78c94)  
+
+
 
 
 
