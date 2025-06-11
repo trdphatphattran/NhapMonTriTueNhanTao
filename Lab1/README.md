@@ -147,11 +147,11 @@ Hàng đợi gồm có: node, path, total_weight.
 
 Vòng lặp chính:  
 ![image](https://github.com/user-attachments/assets/4d5c5f67-c444-42f9-b0f0-c9ef2067369e)  
-Nếu tìm được đích thì trả về đường đi và tổng trọng số  
-![image](https://github.com/user-attachments/assets/58d0f744-bd6d-4e68-88e5-c278eecb530e)    
-
-Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới và tổng trọng số mới.  
-![image](https://github.com/user-attachments/assets/97d87895-9915-4007-a31e-40e87716b46b)  
+Nếu tìm được đích thì trả về đường đi 
+![image](https://github.com/user-attachments/assets/7522cb34-9111-4cef-91f6-04a1a7e189bf)
+ 
+Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới.  
+![image](https://github.com/user-attachments/assets/9881e200-faa5-401d-a05d-250b014d8b75)
 1. Khởi tạo: Hàng đợi = [(S, [S])], Đã thăm = {S}
 2. Lấy S, thêm A, D, E: Hàng đợi = [(A, [S, A]), (D, [S, D]), (E, [S, E])], Đã thăm = {S, A, D, E}
 3. Lấy A, thêm B: Hàng đợi = [(D, [S, D]), (E, [S, E]), (B, [S, A, B])], Đã thăm = {S, A, D, E, B}
