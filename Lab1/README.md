@@ -27,8 +27,41 @@ graph TD
 
 #### Đồ thị BFS trên đồ thị mẫu 2  
 
+Hàm BFS chính:  
+![image](https://github.com/user-attachments/assets/7222627e-0e11-4e42-b838-da1cbfe63a0e)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
 
+Khởi tạo hàng đợi và tập visited:  
+![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
+Hàng đợi gồm có: node, path, total_weight.  
 
+Vòng lặp chính:  
+![image](https://github.com/user-attachments/assets/887f732f-60d5-48e2-a9ac-cb49b4510a94)  
+Nếu tìm được đích thì trả về đường đi  
+![image](https://github.com/user-attachments/assets/7522cb34-9111-4cef-91f6-04a1a7e189bf)
+ 
+Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới.  
+![image](https://github.com/user-attachments/assets/9881e200-faa5-401d-a05d-250b014d8b75)  
+1. Khởi tạo: Hàng đợi = [(S, [S])], Đã thăm = {S}
+2. Lấy S, thêm A, B: Hàng đợi = [(A, [S, A]), (B, [S, B])], Đã thăm = {S, A, B}
+3. Lấy A, thêm C: Hàng đợi = [(B, [S, B]), (C, [S, A, C])], Đã thăm = {S, A, B, C}
+4. Lấy B, thêm D: Hàng đợi = [(C, [S, A, C]), (D, [S, B, D])], Đã thăm = {S, A, B, C, D}
+5. Lấy C, không có kề mới: Hàng đợi = [(D, [S, B, D])]
+6. Lấy D, thêm G: Hàng đợi = [(G, [S, B, D, G])], Đã thăm = {S, A, B, C, D, G}
+7. Lấy G: G là đích, trả về [S, B, D, G]
+
+Nếu không tìm thấy đường đi, trả về "return None, 0".  
+
+Gọi đồ thị mẫu 2    
+![image](https://github.com/user-attachments/assets/3cdd1d7e-9af0-468b-b7cf-af8e35a22dc1)  
+
+Tìm đường đi BFS từ S đến H và in ra kết quả:  
+![image](https://github.com/user-attachments/assets/ef733b1a-3ce4-4269-9191-fd43b0abf1f1)  
+
+Kết quả khi chạy:  
+![image](https://github.com/user-attachments/assets/ed873f25-7c56-4abe-b9a4-b1cb8aa65792)  
 
 ### Bài tập về nhà  
 #### Bài 1: Viết mã Python để chạy BFS và DFS trên **Đồ thị mẫu 6** và **Đồ thị mẫu 7**. Định nghĩa đồ thị dưới dạng từ điển và thêm chú thích chi tiết.  
