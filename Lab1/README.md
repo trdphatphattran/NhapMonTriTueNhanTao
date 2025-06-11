@@ -576,6 +576,12 @@ graph TD
     G --> |7| I
 ```
 
+Các cạnh: S-A: 2, S-B: 4, S-C: 5, A-C: 3, A-B: 7, B-D: 9, B-C: 12, C-E: 10, C-G: 8, D-G: 15, E-H: 7, E-I: 5, F-G: 8, F-H: 16, G-H: 11, G-I: 7.  
+Đường đi: Từ S -> I.  
+
+
+
+
 
 
 
