@@ -442,7 +442,7 @@ Sau cùng, in ra thời gian chạy thực tế và làm tròn đến 5 chữ s�
 So sánh thời gian của BFS và DFS:  
 ![image](https://github.com/user-attachments/assets/c64f737f-05a0-495f-95df-0eda98a27259)  
 
-Kết quả khi chạy: 
+Kết quả khi chạy:  
 ![image](https://github.com/user-attachments/assets/ac833505-6311-4da1-8bc0-543ed71637b0)  
 
 BFS chạy chậm hơn DFS vì lí do sau:  
