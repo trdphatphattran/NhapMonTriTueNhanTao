@@ -572,11 +572,11 @@ graph TD
     E --> |5| I
     F --> |8| G
     F --> |16| H
-    G --> |11| H
+    G --> |11| F
     G --> |7| I
 ```
 
-Các cạnh: S-A: 2, S-B: 4, S-C: 5, A-C: 3, A-B: 7, B-D: 9, B-C: 12, C-E: 10, C-G: 8, D-G: 15, E-H: 7, E-I: 5, F-G: 8, F-H: 16, G-H: 11, G-I: 7.  
+Các cạnh: S-A: 2, S-B: 4, S-C: 5, A-C: 3, A-B: 7, B-D: 9, B-C: 12, C-E: 10, C-G: 8, D-G: 15, E-H: 7, E-I: 5, F-G: 8, F-H: 16, G-F: 11, G-I: 7.  
 Đường đi: Từ S -> I.  
 
 ##### Đồ thị BFS  
@@ -614,7 +614,8 @@ Gọi đồ thị có trọng số, mỗi đỉnh liên kết với các cặp (
 ![image](https://github.com/user-attachments/assets/49f571c5-cc8c-473b-a634-3a568c86f5f7)
 
 Tìm đường đi BFS từ S đến I và in ra kết quả:  
-![image](https://github.com/user-attachments/assets/ec60585f-5992-42bb-a68b-13eb3be78c94)  
+![image](https://github.com/user-attachments/assets/8b603998-a962-4632-b532-6089bdfb6608)
+
 
 
 
