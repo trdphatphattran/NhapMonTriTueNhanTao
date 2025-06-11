@@ -102,6 +102,55 @@ Tìm đường đi DFS từ S đến G và in ra kết quả:
 Kết quả khi chạy:  
 ![image](https://github.com/user-attachments/assets/81f7752c-b029-4c26-a4e2-935d1bd0d177)  
 
+### Sửa mã BFS để đếm số nút đã thăm trên đồ thị mẫu 4.  
+```mermaid
+graph TD
+    S --> A
+    S --> C
+    A --> B
+    A --> D
+    B --> E
+    C --> D
+    C --> F
+    D --> E
+    E --> G
+    F --> G
+```
+
+- **Các cạnh**: S-A, S-C, A-B, A-D, B-E, C-D, C-F, D-E, E-G, F-G.
+
+Hàm BFS chính:  
+![image](https://github.com/user-attachments/assets/7222627e-0e11-4e42-b838-da1cbfe63a0e)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
+
+Khởi tạo hàng đợi và tập visited:  
+![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
+Hàng đợi gồm có: node, path.  
+
+Đếm số nút đã thăm, bắt đầu với 1: "count = 1".  
+
+Vòng lặp chính:  
+![image](https://github.com/user-attachments/assets/f956cbb5-3043-4904-884b-67d03b7c775c)  
+Nếu tìm được đích, thì trả về đường đi và in ra các nút đã thăm  
+![image](https://github.com/user-attachments/assets/bd442cec-41de-497f-ade5-7f1fcd2b5168)  
+
+Duyệt qua các nút kề của nút hiện tại, nếu nút kề chưa được thăm thì thêm nút kề vào tập đã thăm và thêm nút kề và đường đi mới vào hàng đợi, tăng count vì đã tăng thêm một nút.  
+![image](https://github.com/user-attachments/assets/6eceeeb0-5df2-48ff-88c3-58ac4f37ce2b)  
+
+Nếu không tìm thấy đường đi, thì trả về None và in ra tất cả các nút đã thăm.  
+![image](https://github.com/user-attachments/assets/47df3bd3-f057-4ea6-a620-c9c8728f7a8c)  
+
+Gọi đồ thị mẫu 4  
+![image](https://github.com/user-attachments/assets/21ad340f-3bb8-4e41-bfb9-1ecd01b68c94)  
+
+Chạy và in ra kết quả  
+![image](https://github.com/user-attachments/assets/55768504-20da-42c2-8bb6-a653ba4a6bf8)  
+
+Kết quả khi chạy:  
+![image](https://github.com/user-attachments/assets/6418191d-5261-4c45-8709-05b8adc10565)  
+
 ### Bài tập về nhà  
 #### Bài 1: Viết mã Python để chạy BFS và DFS trên **Đồ thị mẫu 6** và **Đồ thị mẫu 7**. Định nghĩa đồ thị dưới dạng từ điển và thêm chú thích chi tiết.  
 Đồ thị mẫu 6:  
