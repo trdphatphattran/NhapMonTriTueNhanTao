@@ -163,13 +163,13 @@ Duyệt các nút kề của node hiện tại, nếu neighbour chưa được t
 
 Nếu không tìm thấy đường đi, trả về "return None, 0".  
 
-Gọi đồ thị mẫu 6 có trọng số, mỗi đỉnh liên kết với các cặp (nút kề, trọng số)  
+Gọi đồ thị mẫu 7  
 ![image](https://github.com/user-attachments/assets/316e6cb2-2937-4df0-a3fd-7929ca926e09)  
 
 Tìm đường đi BFS từ S đến H và in ra kết quả:  
 ![image](https://github.com/user-attachments/assets/ec60585f-5992-42bb-a68b-13eb3be78c94)  
 
-##### Đồ thị DFS trên đồ thị mẫu 6  
+##### Đồ thị DFS trên đồ thị mẫu 7  
 
 Hàm DFS chính:  
 ![image](https://github.com/user-attachments/assets/5dbd6b7c-6c65-47f6-9cad-0ba658f06aaf)  
@@ -443,7 +443,19 @@ So sánh thời gian của BFS và DFS:
 ![image](https://github.com/user-attachments/assets/c64f737f-05a0-495f-95df-0eda98a27259)  
 
 Kết quả khi chạy: 
-![image](https://github.com/user-attachments/assets/ac833505-6311-4da1-8bc0-543ed71637b0)
+![image](https://github.com/user-attachments/assets/ac833505-6311-4da1-8bc0-543ed71637b0)  
+
+BFS chạy chậm hơn DFS vì lí do sau:  
+- BFS phải duyệt tất cả các đỉnh cùng mức, có nghĩa là nó sẽ thăm nhiều đỉnh hơn trước khi đến đích -> tốn nhiều thời gian.
+- DFS đi sâu theo nhánh mà không cần duyệt các đỉnh cùng mức, nên nó sẽ chỉ đi qua một vài đỉnh trước khi đến đích -> tốn ít thời gian.
+
+##### Đo thời gian chạy của BFS trên đồ thị mẫu 7  
+
+Gọi hàm time bằng câu lệnh "import time".  
+
+
+
+
 
 
 
