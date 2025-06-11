@@ -35,7 +35,7 @@ goal: nút đích đến
 
 Khởi tạo hàng đợi và tập visited:  
 ![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
-Hàng đợi gồm có: node, path, total_weight.  
+Hàng đợi gồm có: node, path.  
 
 Vòng lặp chính:  
 ![image](https://github.com/user-attachments/assets/887f732f-60d5-48e2-a9ac-cb49b4510a94)  
@@ -235,7 +235,7 @@ goal: nút đích đến
 
 Khởi tạo hàng đợi và tập visited:  
 ![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
-Hàng đợi gồm có: node, path, total_weight.  
+Hàng đợi gồm có: node, path.  
 
 Vòng lặp chính:  
 ![image](https://github.com/user-attachments/assets/887f732f-60d5-48e2-a9ac-cb49b4510a94)  
