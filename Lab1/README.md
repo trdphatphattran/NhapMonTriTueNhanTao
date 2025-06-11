@@ -547,8 +547,18 @@ time_dfs = end_dfs - start_dfs: thời gian chạy thực tế = thời gian k�
 
 Sau cùng, in ra thời gian chạy thực tế và làm tròn đến 7 chữ số thập phân {time_dfs:.7f}.  
 
+Kết quả khi chạy:  
+![image](https://github.com/user-attachments/assets/bd16aa81-f6dc-4cb4-acb1-9430b894c64f)  
+![image](https://github.com/user-attachments/assets/4a5aec34-34a5-4bb7-9ba7-8df1e2a6053c)  
 
-BFS chạy chậm hơn DFS vì lí do sau: 
+Ở đây, có thể xảy ra 2 trường hợp:
+- BFS đi chậm hơn DFS vì BFS phải duyệt tất cả các đỉnh cùng mức, có nghĩa là nó sẽ thăm nhiều đỉnh hơn trước khi đến đích -> tốn nhiều thời gian. DFS đi sâu theo nhánh mà không cần duyệt các đỉnh cùng mức, nên nó sẽ chỉ đi qua một vài đỉnh trước khi đến đích -> tốn ít thời gian.
+- DFS đi chậm hơn BFS vì DFS đôi khi có thể đi sai nhánh thì phải quay lại đi từ đầu để tiếp tục thử nhánh khác -> tốn nhiều thời gian. BFS duyệt theo mức nên nếu đích nằm gần điểm bắt đầu thì BFS sẽ tìm thấy nhanh hơn -> tốn ít thời gian.
+
+
+
+
+
 
 
 
