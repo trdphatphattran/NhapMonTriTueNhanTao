@@ -453,6 +453,101 @@ BFS chạy chậm hơn DFS vì lí do sau:
 
 Gọi hàm time bằng câu lệnh "import time".  
 
+Hàm BFS chính:  
+![image](https://github.com/user-attachments/assets/a8c6a965-02be-407c-8378-79a32eeafb4b)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
+
+Khởi tạo hàng đợi và tập visited:  
+![image](https://github.com/user-attachments/assets/3976395b-6414-4a17-9edb-aba5f0aaa6dd)  
+Hàng đợi gồm có: node, path, total_weight.  
+
+Vòng lặp chính:  
+![image](https://github.com/user-attachments/assets/4d5c5f67-c444-42f9-b0f0-c9ef2067369e)  
+Nếu tìm được đích thì trả về đường đi và tổng trọng số  
+![image](https://github.com/user-attachments/assets/58d0f744-bd6d-4e68-88e5-c278eecb530e)    
+
+Duyệt các nút kề của node hiện tại, nếu neighbour chưa được thăm thì thêm vào visited và xếp vào hàng đợi với đường đi mới và tổng trọng số mới.  
+![image](https://github.com/user-attachments/assets/97d87895-9915-4007-a31e-40e87716b46b)  
+1. Khởi tạo: Hàng đợi = [(S, [S])], Đã thăm = {S}
+2. Lấy S, thêm A, D, E: Hàng đợi = [(A, [S, A]), (D, [S, D]), (E, [S, E])], Đã thăm = {S, A, D, E}
+3. Lấy A, thêm B: Hàng đợi = [(D, [S, D]), (E, [S, E]), (B, [S, A, B])], Đã thăm = {S, A, D, E, B}
+4. Lấy D, không có kề mới (A, E đã thăm): Hàng đợi = [(E, [S, E]), (B, [S, A, B])]
+5. Lấy E, thêm F, H: Hàng đợi = [(B, [S, A, B]), (F, [S, E, F]), (H, [S, E, H])], Đã thăm = {S, A, D, E, B, F, H}
+6. Lấy B, thêm C: Hàng đợi = [(F, [S, E, F]), (H, [S, E, H]), (C, [S, A, B, C])], Đã thăm = {S, A, D, E, B, F, H, C}
+7. Lấy F, không có kề mới (G, H đã thăm hoặc chưa tới): Hàng đợi = [(H, [S, E, H]), (C, [S, A, B, C])]
+8. Lấy H: H là đích, trả về [S, E, H] 
+
+Nếu không tìm thấy đường đi, trả về "return None, 0".  
+
+Gọi đồ thị mẫu 7  
+![image](https://github.com/user-attachments/assets/8afd4dcd-e685-4a0c-b71f-99ca6f9f5455)
+
+Tìm đường đi BFS từ S đến H và in ra kết quả:  
+![image](https://github.com/user-attachments/assets/805d0707-5916-4955-a968-efdb26b44cf8)  
+
+Đo thời gian chạy của BFS  
+start_bfs: thời điểm bắt đầu chạy của thuật toán, ở đây sử dụng hàm time.perf_counter() vì hàm này cho độ chính xác cao khi đo thời gian.  
+
+path_bfs, weight_bfs: trả về các đỉnh được tạo trên đường đi từ S -> H và tổng trọng số của nó.  
+
+end_bfs: thời điểm kết thúc của thuật toám, ở đây cũng sử dụng hàm time.perf_counter().  
+
+time_bfs = end_bfs - start_bfs: thời gian chạy thực tế = thời gian kết thúc = thời gian bắt đầu.  
+
+Sau cùng, in ra thời gian chạy thực tế và làm tròn đến 5 chữ số thập phân {time_bfs:.5f}.  
+
+##### Đo thời gian chạy của DFS trên đồ thị mẫu 7  
+
+Hàm DFS chính:  
+![image](https://github.com/user-attachments/assets/5dbd6b7c-6c65-47f6-9cad-0ba658f06aaf)  
+graph: đồ thị với các cạnh có trọng số  
+start: nút bắt đầu tìm kiếm  
+goal: nút đích đến  
+visited: các nút đã thăm  
+path: các nút đi qua  
+total_weight: tổng trọng số  
+
+Khởi tạo tập đã thăm và đường đi nếu chưa có:  
+![image](https://github.com/user-attachments/assets/fda1f8f4-5ef1-4c18-b9bb-631a75ce66fa)  
+
+Thêm đỉnh hiện tại vào tập đã thăm "visited.add(start)".  
+
+Nếu hiện tại là đích cần đến thì trả về đường đi và tổng trọng số:  
+![image](https://github.com/user-attachments/assets/48846b37-c6c1-482c-8905-a51259384621)  
+
+Duyệt các nút kề:  
+![image](https://github.com/user-attachments/assets/6a3a72f6-010f-452a-907b-db990c8164de)  
+Duyệt các nút kề chưa được thăm, gọi đệ quy để tiếp tục DFS. Nếu tìm thấy đường đi thì trả về luôn.  
+1. Khởi tạo: Ngăn xếp = [(S, [S])], Đã thăm = {S}
+2. Lấy S, thêm A: Ngăn xếp = [(A, [S, A])], Đã thăm = {S, A}
+3. Lấy A, thêm B: Ngăn xếp = [(B, [S, A, B])], Đã thăm = {S, A, B}
+4. Lấy B, thêm C: Ngăn xếp = [(C, [S, A, B, C])], Đã thăm = {S, A, B, C}
+5. Lấy C, thêm F: Ngăn xếp = [(F, [S, A, B, C, F])], Đã thăm = {S, A, B, C, F}
+6. Lấy F, thêm G: Ngăn xếp = [(G, [S, A, B, C, F, G])], Đã thăm = {S, A, B, C, F, G}
+7. Lấy G, thêm H: Ngăn xếp = [(H, [S, A, B, C, F, G, H])], Đã thăm = {S, A, B, C, F, G, H}
+8. Lấy H: H là đích, trả về [S, A, B, C, F, G, H]
+
+Nếu không tìm thấy đường đi, trả về "return None, 0".  
+
+Gọi đồ thị mẫu 7   
+![image](https://github.com/user-attachments/assets/de01fb96-258d-4329-89dd-f3a21b390480)  
+ 
+Tìm đường đi DFS từ S đến H và in ra kết quả:  
+![image](https://github.com/user-attachments/assets/352fa980-535f-4fc1-8e6b-1e32780416de)  
+
+Đo thời gian chạy của DFS  
+start_dfs: thời điểm bắt đầu chạy của thuật toán, ở đây sử dụng hàm time.perf_counter() vì hàm này cho độ chính xác cao khi đo thời gian.  
+
+path_dfs, weight_dfs: trả về các đỉnh được tạo trên đường đi từ S -> H và tổng trọng số của nó.  
+
+end_dfs: thời điểm kết thúc của thuật toám, ở đây cũng sử dụng hàm time.perf_counter().  
+
+time_dfs = end_dfs - start_dfs: thời gian chạy thực tế = thời gian kết thúc = thời gian bắt đầu.  
+
+Sau cùng, in ra thời gian chạy thực tế và làm tròn đến 5 chữ số thập phân {time_bds:.5f}.  
+
 
 
 
