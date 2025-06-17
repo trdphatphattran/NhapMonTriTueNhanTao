@@ -82,9 +82,9 @@ Tạo danh sách rỗng để chứa lời giải.
 Nhập số lượng quân hậu, biến i = 0 dùng để đánh số thứ tự lời giải  
 ![image](https://github.com/user-attachments/assets/700518d6-97b8-4a1c-b01e-cb392413770b)  
 Vòng lặp:  
-- Duyệt từng solution trong danh sách lời giải
-- Tạo một bảng N x N
-![image](https://github.com/user-attachments/assets/8e1878ab-a08b-4ab0-9b2f-623d34c4ae37)
+- Duyệt từng solution trong danh sách lời giải  
+- Tạo một bảng N x N  
+![image](https://github.com/user-attachments/assets/8e1878ab-a08b-4ab0-9b2f-623d34c4ae37)  
 
 Đặt quân hậu vào bảng và in ra kết quả  
 Ví dụ: gọi số quân hậu là 8  
