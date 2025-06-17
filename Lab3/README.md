@@ -30,6 +30,46 @@ Nhập số quân hậu và in ra bàn cờ trống.
 Gọi hàm tìm lời giải và in tổng số lời giải.  
 ![image](https://github.com/user-attachments/assets/bf4200d3-1a64-431a-9a0e-1a9e1476098d)  
 Tạo lại bàn cờ với Q là quân hậu, hiển thị thứ tự lời giải, vị trí, bàn cờ.  
+Ví dụ: gọi số quân hậu là 4  
+![image](https://github.com/user-attachments/assets/126d1fa2-167c-4784-aeb4-1a5bb4246074)  
+Chú thích:  
+Lời giải 1: [1, 3, 0, 2]  
+- Hàng 0 -> Cột 1
+- Hàng 1 -> Cột 3
+- Hàng 2 -> Côt 0
+- Hàng 3 -> Cột 2
+
+Lời giải 2: [2, 0, 3, 1]  
+- Hàng 0 -> Cột 2
+- Hàng 1 -> Cột 0
+- Hàng 2 -> Cột 3
+- Hàng 3 -> Cột 1
+
+### In theo tọa độ  
+for index, solution in enumerate(solutions, start=1):  
+- Duyệt qua từng lời giải trong danh sách solutions
+- solution là danh sách các cột mà quân hậu đã đứng sẵn
+- index là số thứ tự lời giải, bắt đầu là 1
+board = np.full((num_queens, num_queens), "-"): Tạo bảng có kích thước N x N
+coordinates = [(row, col) for row, col in enumerate(solution)]: coordinates chứa danh sách các tọa độ (row, col) của các quân hậu.
+![image](https://github.com/user-attachments/assets/c35eb255-6a64-45c5-9eb8-f976ac62c291)
+In lời giải và tọa độ các quân hậu
+![image](https://github.com/user-attachments/assets/a7e150bd-db8b-4bcc-a466-911ef7cf42df)
+
+Đặt kí hiệu 'Q' vào vị trí với tọa độ quân hậu và in ra bàn cờ.  
+Ví dụ: có 4 quân hậu  
+![image](https://github.com/user-attachments/assets/4b825ac8-5ba2-48f2-99e5-110d7564d3ff)  
+
+
+## Thực hành 7: Bài toán 8-Queens  
+Tương tự bài toán 4-Queens, nhưng bàn cờ được mở rộng lên 8x8 và cần đặt 8 quân hậu sao cho không quân nào tấn công nhau.  
+
+
+
+
+
+
+
 
 
 
