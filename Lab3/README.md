@@ -102,14 +102,14 @@ Hàng 7 -> Cột 3
 
 ### In theo tọa độ  
 for index, solution in enumerate(solutions, start=1):  
-- Duyệt qua từng lời giải trong danh sách solutions
-- solution là danh sách các cột mà quân hậu đã đứng sẵn
-- index là số thứ tự lời giải, bắt đầu là 1
-board = np.full((num_queens, num_queens), "-"): Tạo bảng có kích thước N x N
-coordinates = [(row, col) for row, col in enumerate(solution)]: coordinates chứa danh sách các tọa độ (row, col) của các quân hậu.
-![image](https://github.com/user-attachments/assets/c35eb255-6a64-45c5-9eb8-f976ac62c291)
-In lời giải và tọa độ các quân hậu
-![image](https://github.com/user-attachments/assets/a7e150bd-db8b-4bcc-a466-911ef7cf42df)
+- Duyệt qua từng lời giải trong danh sách solutions  
+- solution là danh sách các cột mà quân hậu đã đứng sẵn  
+- index là số thứ tự lời giải, bắt đầu là 1  
+board = np.full((num_queens, num_queens), "-"): Tạo bảng có kích thước N x N  
+coordinates = [(row, col) for row, col in enumerate(solution)]: coordinates chứa danh sách các tọa độ (row, col) của các quân hậu.  
+![image](https://github.com/user-attachments/assets/c35eb255-6a64-45c5-9eb8-f976ac62c291)  
+In lời giải và tọa độ các quân hậu  
+![image](https://github.com/user-attachments/assets/a7e150bd-db8b-4bcc-a466-911ef7cf42df)  
 
 Đặt kí hiệu 'Q' vào vị trí với tọa độ quân hậu và in ra bàn cờ.  
 Ví dụ: có 8 quân hậu  
