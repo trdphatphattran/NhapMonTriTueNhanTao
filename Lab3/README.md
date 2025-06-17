@@ -25,7 +25,7 @@ Duyệt từng vị trí hợp lệ, gọi đệ quy để thử tiếp quân h�
 ![image](https://github.com/user-attachments/assets/34b2e96a-3894-41fa-99fd-da666db270a7)  
 Tạo danh sách rỗng để chứa lời giải.  
 ![image](https://github.com/user-attachments/assets/87707f85-528d-408f-b248-d596b600c380)  
-Nhập số quân hậu và in ra bàn cờ trống.    
+Nhập số quân hậu và in ra bàn cờ trống.      
 ![image](https://github.com/user-attachments/assets/80aed7e7-1692-48a6-b8d9-7c350271c5a5)  
 Gọi hàm tìm lời giải và in tổng số lời giải.  
 ![image](https://github.com/user-attachments/assets/bf4200d3-1a64-431a-9a0e-1a9e1476098d)  
