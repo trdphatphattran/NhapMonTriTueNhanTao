@@ -22,13 +22,31 @@ Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm
 
 ## Ví dụ 1: Tối ưu hóa hàm 1 biến  
 ### Bài toán  
-Tìm $x$ sao cho  
-$$
-f(x) = -(x^2) + 10x + 50
-$$  
-đạt giá trị lớn nhất trong khoảng  
-$$
-x \in [0, 10].
-$$
+Tìm x sao cho f(x) = -(x^2) + 10x + 50 đạt GTLN trong khoảng x ∈ [0, 10].  
+Code chính:  
+![image](https://github.com/user-attachments/assets/db6ec9cf-823a-4a1b-b53e-661728098e45)  
+#### Giải thích:  
+![image](https://github.com/user-attachments/assets/42fc49fd-f8d4-4a44-87c3-73368bc5caa8)  
+Khởi tạo quần thể ban đầu gồm pop_size cá thể và một danh sách lưu giá trị f(x) tốt nhất của mỗi thế hệ.  
+![image](https://github.com/user-attachments/assets/af094dbb-48f6-409b-aa52-dcc633ab7654)  
+Vòng lặp chạy qua từng thế hệ tiến hóa, tính fitness cho tất cả cá thể, lấy giá trị tốt nhất và lưu lại để vẽ đồ thị.  
+![image](https://github.com/user-attachments/assets/2aa7ae35-4138-44d9-89f7-b40be747f875)  
+Tạo quần thể mới gồm 2 cha mẹ tốt nhất -> lai ghép tạo con -> đột biến con -> thêm con vào thế hệ mới.  
+![image](https://github.com/user-attachments/assets/4597a6fb-1e3e-41bc-8f83-4d007226fe88)  
+Cập nhật quần thể mới cho thế hệ tiếp theo và in ra cá thể tốt nhất của thế hệ hiện tại.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
