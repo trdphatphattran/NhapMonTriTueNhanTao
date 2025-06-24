@@ -3,7 +3,7 @@
 Sinh viên: Trần Đại Phát  
 MSSV: 2374802010379  
 Môn học: Nhập môn Trí tuệ nhân tạo  
-GVHD: Nguyễn Thái Anh
+GVHD: Nguyễn Thái Anh  
 Năm học: 2024 - 2025  
 ## Mục tiêu bài học:  
 - Hiểu rõ nguyên lý hoạt động của thuật toán di truyền.
