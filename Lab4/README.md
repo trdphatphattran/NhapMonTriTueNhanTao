@@ -23,9 +23,17 @@ Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm
 ## Ví dụ 1: Tối ưu hóa hàm 1 biến  
 ### Bài toán  
 Tìm x sao cho f(x) = -(x^2) + 10x + 50 đạt GTLN trong khoảng x ∈ [0, 10].  
-Code chính:  
-![image](https://github.com/user-attachments/assets/db6ec9cf-823a-4a1b-b53e-661728098e45)  
 #### Giải thích:  
+![image](https://github.com/user-attachments/assets/89050164-637b-4141-9cc5-2ce9f737dfcf)  
+Khởi tạo hàm mục tiêu.  
+![image](https://github.com/user-attachments/assets/d6dc0e3e-b464-460e-ba52-ef63e53cce0c)  
+Khởi tạo quần thể, mỗi cá thể là một giá trị ngẫu nhiên trong đoạn [min_val, max_val].  
+![image](https://github.com/user-attachments/assets/dc08272e-027b-4438-99d1-aad53c858bcf)  
+Lựa chọn cha mẹ, chọn ngẫu nhiên tournament_size cá thể từ quần thể, lấy cá thể có fitness cao nhất làm cha mẹ.  
+![image](https://github.com/user-attachments/assets/e67036b2-7126-41d1-a6e1-fb3924b237f2)  
+Đây là lai ghép. Với xác suất 80%, tạo con bằng cách lấy trung bình hai cha mẹ. 20% còn lại thì con giống hệt cha mẹ đầu tiên.  
+![image](https://github.com/user-attachments/assets/6bc8f342-6780-4f6e-bef6-5069739298d7)  
+Đây là đột biến. Với xác suất 10%, cá thể đột biến thành giá trị ngẫu nhiên từ [0, 10].  
 ![image](https://github.com/user-attachments/assets/42fc49fd-f8d4-4a44-87c3-73368bc5caa8)  
 Khởi tạo quần thể ban đầu gồm pop_size cá thể và một danh sách lưu giá trị f(x) tốt nhất của mỗi thế hệ.  
 ![image](https://github.com/user-attachments/assets/af094dbb-48f6-409b-aa52-dcc633ab7654)  
@@ -34,6 +42,15 @@ Vòng lặp chạy qua từng thế hệ tiến hóa, tính fitness cho tất c�
 Tạo quần thể mới gồm 2 cha mẹ tốt nhất -> lai ghép tạo con -> đột biến con -> thêm con vào thế hệ mới.  
 ![image](https://github.com/user-attachments/assets/4597a6fb-1e3e-41bc-8f83-4d007226fe88)  
 Cập nhật quần thể mới cho thế hệ tiếp theo và in ra cá thể tốt nhất của thế hệ hiện tại.  
+
+## Ví dụ 2: Tối ưu hóa hàm 2 biến  
+### Bài toán  
+Tìm x, y sao cho g(x, y) = x^2 + y^2 đạt GTNN trong khoảng x ∈ [-5, 5].  
+Code chính:  
+![image](https://github.com/user-attachments/assets/775e4a04-081e-49ed-a723-4d4a0705e459)  
+#### Giải thích:  
+
+
 
 
 
