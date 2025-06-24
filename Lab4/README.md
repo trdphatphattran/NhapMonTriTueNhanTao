@@ -46,9 +46,40 @@ Cập nhật quần thể mới cho thế hệ tiếp theo và in ra cá thể t
 ## Ví dụ 2: Tối ưu hóa hàm 2 biến  
 ### Bài toán  
 Tìm x, y sao cho g(x, y) = x^2 + y^2 đạt GTNN trong khoảng x ∈ [-5, 5].  
-Code chính:  
-![image](https://github.com/user-attachments/assets/775e4a04-081e-49ed-a723-4d4a0705e459)  
 #### Giải thích:  
+![image](https://github.com/user-attachments/assets/3c5df443-51d0-4878-8ded-89ff26e7751d)  
+Khởi tạo hàm mục tiêu.  
+![image](https://github.com/user-attachments/assets/adb8e549-6d63-43b4-8d6c-a1bfb87a675d)  
+Khởi tạo quần thể, mỗi cá thể là một giá trị ngẫu nhiên trong đoạn [min_val, max_val].  
+![image](https://github.com/user-attachments/assets/cbb8a9a6-2435-4854-b04d-5a11e8366582)  
+Lựa chọn cha mẹ, chọn ngẫu nhiên tournament_size cá thể từ quần thể, lấy cá thể có fitness cao nhất làm cha mẹ.  
+![image](https://github.com/user-attachments/assets/e429decc-ac66-4926-acf2-2d2faf817c58)  
+Lai ghép:  
+- Xác suất 80%: Tạo con bằng trung bình các tọa độ 2 cha mẹ.
+- Xác suất 20%: Con giống cha mẹ 1.
+![image](https://github.com/user-attachments/assets/cca891b8-6c3f-476c-9d5b-320e47618cd3)
+Đột biến: Với xác suất 10%, mỗi biến x hoặc y có thể thay đổi ngẫu nhiên từ [-5, 5].
+![image](https://github.com/user-attachments/assets/44a0a754-938b-4568-99d8-1056567168c8)  
+Khởi tạo quần thể ban đầu gồm pop_size cá thể và một danh sách lưu giá trị f(x) tốt nhất của mỗi thế hệ.  
+![image](https://github.com/user-attachments/assets/55063444-2460-4c9b-9470-fd9fbd06515c)  
+Vòng lặp chạy qua từng thế hệ tiến hóa, tính fitness cho tất cả cá thể, lấy giá trị tốt nhất và lưu lại để vẽ đồ thị.  
+![image](https://github.com/user-attachments/assets/f20f71cc-f3b1-4617-be76-d4cf4bce7038)  
+Tạo quần thể mới gồm 2 cha mẹ tốt nhất -> lai ghép tạo con -> đột biến con -> thêm con vào thế hệ mới. 
+![image](https://github.com/user-attachments/assets/f5e70e30-e90b-4bea-8fc4-f221cb80daf3)  
+Cập nhật quần thể mới cho thế hệ tiếp theo và in ra cá thể tốt nhất của thế hệ hiện tại.  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
