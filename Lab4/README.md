@@ -66,7 +66,10 @@ Vòng lặp chạy qua từng thế hệ tiến hóa, tính fitness cho tất c�
 ![image](https://github.com/user-attachments/assets/f20f71cc-f3b1-4617-be76-d4cf4bce7038)  
 Tạo quần thể mới gồm 2 cha mẹ tốt nhất -> lai ghép tạo con -> đột biến con -> thêm con vào thế hệ mới. 
 ![image](https://github.com/user-attachments/assets/f5e70e30-e90b-4bea-8fc4-f221cb80daf3)  
-Cập nhật quần thể mới cho thế hệ tiếp theo và in ra cá thể tốt nhất của thế hệ hiện tại.  
+Cập nhật quần thể mới cho thế hệ tiếp theo và in ra cá thể tốt nhất của thế hệ hiện tại.
+
+```math
+\max_{\vec{x} \in \mathcal{D}} f(\vec{x}) \quad \text{hoặc} \quad \min_{\vec{x} \in \mathcal{D}} f(\vec{x})
 
 
 
