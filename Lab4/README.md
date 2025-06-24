@@ -20,4 +20,15 @@ Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm
 5. Đột biến (Mutation): Thay đổi ngẫu nhiên một số gen để duy trì tính đa dạng.
 6. Lặp lại: Quay lại bước 2 cho đến khi đạt điều kiện dừng (số thế hệ hoặc giá trị Fitness mong muốn).
 
+## Ví dụ 1: Tối ưu hóa hàm 1 biến  
+### Bài toán  
+Tìm $x$ sao cho  
+$$
+f(x) = -(x^2) + 10x + 50
+$$  
+đạt giá trị lớn nhất trong khoảng  
+$$
+x \in [0, 10].
+$$
+
 
