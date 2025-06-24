@@ -21,8 +21,7 @@ Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm
 6. Lặp lại: Quay lại bước 2 cho đến khi đạt điều kiện dừng (số thế hệ hoặc giá trị Fitness mong muốn).
 
 ## Công thức tổng quát:  
-\max_{\vec{x} \in \mathcal{D}} f(\vec{x}) \quad \text{hoặc} \quad \min_{\vec{x} \in \mathcal{D}} f(\vec{x})
-
+![image](https://github.com/user-attachments/assets/68570270-fe39-480b-b221-244e637fc086) hoặc ![image](https://github.com/user-attachments/assets/35ea920c-1349-43d7-8602-ac6de9e9cfff)  
 
 ## Ví dụ 1: Tối ưu hóa hàm 1 biến  
 ### Bài toán  
