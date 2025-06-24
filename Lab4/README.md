@@ -56,7 +56,8 @@ Lựa chọn cha mẹ, chọn ngẫu nhiên tournament_size cá thể từ quầ
 ![image](https://github.com/user-attachments/assets/e429decc-ac66-4926-acf2-2d2faf817c58)  
 Lai ghép:  
 - Xác suất 80%: Tạo con bằng trung bình các tọa độ 2 cha mẹ.  
-- Xác suất 20%: Con giống cha mẹ 1.  
+- Xác suất 20%: Con giống cha mẹ 1.
+
 ![image](https://github.com/user-attachments/assets/cca891b8-6c3f-476c-9d5b-320e47618cd3)  
 Đột biến: Với xác suất 10%, mỗi biến x hoặc y có thể thay đổi ngẫu nhiên từ [-5, 5].
 ![image](https://github.com/user-attachments/assets/44a0a754-938b-4568-99d8-1056567168c8)  
