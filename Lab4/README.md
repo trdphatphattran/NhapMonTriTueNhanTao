@@ -20,6 +20,22 @@ Thuật toán di truyền (Genetic Algorithm - GA) là một phương pháp tìm
 5. Đột biến (Mutation): Thay đổi ngẫu nhiên một số gen để duy trì tính đa dạng.
 6. Lặp lại: Quay lại bước 2 cho đến khi đạt điều kiện dừng (số thế hệ hoặc giá trị Fitness mong muốn).
 
+## Công thức tổng quát:  
+Tìm \( \vec{x} \in \mathbb{R}^n \) sao cho:
+
+\[
+\max_{\vec{x} \in \mathcal{D}} f(\vec{x})
+\]
+
+hoặc
+
+\[
+\min_{\vec{x} \in \mathcal{D}} f(\vec{x})
+\]
+
+*(Với \( \mathcal{D} \) là miền giá trị của các biến – ví dụ: \( x_i \in [a_i, b_i] \))*
+
+
 ## Ví dụ 1: Tối ưu hóa hàm 1 biến  
 ### Bài toán  
 Tìm x sao cho f(x) = -(x^2) + 10x + 50 đạt GTLN trong khoảng x ∈ [0, 10].  
@@ -69,8 +85,7 @@ Tạo quần thể mới gồm 2 cha mẹ tốt nhất -> lai ghép tạo con ->
 ![image](https://github.com/user-attachments/assets/f5e70e30-e90b-4bea-8fc4-f221cb80daf3)  
 Cập nhật quần thể mới cho thế hệ tiếp theo và in ra cá thể tốt nhất của thế hệ hiện tại.
 
-```math
-\max_{\vec{x} \in \mathcal{D}} f(\vec{x}) \quad \text{hoặc} \quad \min_{\vec{x} \in \mathcal{D}} f(\vec{x})
+
 
 
 
