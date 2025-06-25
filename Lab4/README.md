@@ -99,6 +99,35 @@ Phương pháp chọn lọc: Roulette Wheel Selection.
 
 
 
+## Hướng dẫn  
+### 1. Cài đặt môi trường  
+Cài python, sau đó cài các thư viện:  
+Dùng tổ hợp phím: Windows + R + cmd.  
+- pip install numpy matplotlib.
+
+### 2. Chạy notebook  
+- Mở jupyter notebook trên VSCode.
+- Code từng bài chạy và xem kết quả.
+- Nếu xảy ra lỗi: code sai, chưa cài thư viện, ... -> Không hiển thị kết quả.
+
+### 3. Tùy chỉnh tham số  
+Có thể thay đổi vài thứ sau:  
+- Hàm mục tiêu.
+- Tỉ lệ lai ghép.
+- Giá trị nhỏ nhất và lớn nhất.
+- Kích thước quần thể
+- Các phương pháp chọn lọc: Tournament Selection, Roulette Wheel Selection, ...
+- ...
+
+## Tài liệu hướng dẫn  
+- Slide bài tập thực hành - Van Lang University.
+- An Introduction to Genetic Algorithms – Melanie Mitchell.  
+
+
+
+
+
+
 
 
 
