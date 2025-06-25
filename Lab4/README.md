@@ -74,6 +74,43 @@ Cập nhật quần thể mới cho thế hệ tiếp theo và in ra cá thể t
 
 ## Bài tập  
 ### Bài toán 1:  
+Tối ưu hàm h(x) = sin(x) + cos(x) trong miền x ∈ [0, 2π].  
+
+Ta có: h(x) = sin(x) + cos(x) = √2.sin(x + π/4) -> max h(x) = √2 ≈ 1,1412.  
+Xảy ra khi: x = π/4.  
+Phương pháp chọn lọc: Roulette Wheel Selection.  
+
+#### Code chính:  
+![image](https://github.com/user-attachments/assets/5c14fec5-9a16-486a-b4b1-852abd7f2e32)  
+- Lấy fitness nhỏ nhất trong quần thể (trong đoạn code có thể là -1,1412).  
+- Nếu có giá trị âm, ta dịch tất cả fitness về dương.
+
+![image](https://github.com/user-attachments/assets/86ce6a06-9d02-4244-a68f-9320f26e7ca1)  
+- total_fitness: tổng độ thích nghi của quần thể.  
+- pick: chọn ngẫu nhiên 1 giá trị trong đoạn [0, total_fitness].  
+- current: biến cộng dồn, xác định vị trí rơi của pick.
+
+![image](https://github.com/user-attachments/assets/153ee70d-a43f-49af-9648-4598ddd1d940)  
+- Vòng lặp sẽ cộng dồn từng giá trị fitness.
+- Khi current vượt qua pick, tức là roulette đã được chọn.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
