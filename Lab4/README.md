@@ -121,6 +121,38 @@ Phương pháp chọn lọc: Roulette Wheel Selection.
 - Random 1 số ngẫu nhiên trong đoạn [0, 1], nếu nhỏ hơn 5% thì cá thể sẽ bị đột biến.
 - Ngược lại, cá thể sẽ được gán một giá trị trong khoảng [0; 2π].
 
+### Bài 3  
+Thay đổi tham số của thuật toán di truyền:  
+- Hàm mục tiêu: 2*x**2 + 3*x + 5
+- pop_size = 40.
+- generations = 80.
+- mutation_rate = 0.2.
+- crossover_rate = 0.6.
+
+#### Code chính:  
+![image](https://github.com/user-attachments/assets/93efff99-e163-47e5-a80d-9c44b069612c)  
+Khai báo hàm mục tiêu.  
+![image](https://github.com/user-attachments/assets/eda2ff85-d19a-4254-b3ad-155a02c10eef)  
+- Thay đổi crossover_rate = 0.6.
+- Chọn 1 số ngẫu nhiên trong [0, 1], nếu nhỏ hơn crossover_rate thì thực hiện phép lai giữa 2 cha mẹ.
+- Nếu lai ghép xảy ra: cá thể con được tạo ra bằng trung bình cộng của cha và mẹ.
+![image](https://github.com/user-attachments/assets/0225fb77-538e-45b0-9ec6-7752d01f0404)
+- Thay đổi mutation_rate = 0.2.
+- Random 1 số ngẫu nhiên trong đoạn [0, 1], nếu nhỏ hơn 0.2 thì cá thể sẽ bị đột biến.
+- Ngược lại, cá thể sẽ được gán một giá trị trong khoảng [0; 10].
+![image](https://github.com/user-attachments/assets/771844ba-da29-440f-8437-426b35b33865)
+- Thay đổi pop_size = 40 và generations = 80.
+- Khởi tạo quần thể gồm 40 cá thể ngẫu nhiên [0, 10].
+- Lặp 80 thế hệ, mỗi thế hệ gồm:
+- + Tính fitness cho toàn bộ cá thể.
+  + 
+
+
+
+
+
+
+
 
 
 
