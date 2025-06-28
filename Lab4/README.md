@@ -144,8 +144,14 @@ Khai báo hàm mục tiêu.
 - Thay đổi pop_size = 40 và generations = 80.
 - Khởi tạo quần thể gồm 40 cá thể ngẫu nhiên [0, 10].
 - Lặp 80 thế hệ, mỗi thế hệ gồm:
-- + Tính fitness cho toàn bộ cá thể.
-  + 
+  + Tính fitness cho toàn bộ cá thể.  
+  + Chọn cha mẹ theo xác suất tỉ lệ fitness.
+  + Lai ghép 2 cha mẹ, tạo con mới.
+  + Đột biến một số con.
+  + Đưa ra quần thể mới.
+ 
+
+
 
 
 
