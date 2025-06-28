@@ -73,7 +73,7 @@ Tạo quần thể mới gồm 2 cha mẹ tốt nhất -> lai ghép tạo con ->
 Cập nhật quần thể mới cho thế hệ tiếp theo và in ra cá thể tốt nhất của thế hệ hiện tại.  
 
 ## Bài tập  
-### Bài toán 1:  
+### Bài 1:  
 Tối ưu hàm h(x) = sin(x) + cos(x) trong miền x ∈ [0, 2π].  
 
 Ta có: h(x) = sin(x) + cos(x) = √2.sin(x + π/4) -> max h(x) = √2 ≈ 1,1412.  
@@ -93,6 +93,17 @@ Phương pháp chọn lọc: Roulette Wheel Selection.
 ![image](https://github.com/user-attachments/assets/153ee70d-a43f-49af-9648-4598ddd1d940)  
 - Vòng lặp sẽ cộng dồn từng giá trị fitness.
 - Khi current vượt qua pick, tức là roulette đã được chọn.
+
+### Bài 2  
+Tối ưu hàm h(x) = sin(x) + cos(x) trong miền x ∈ [0, 2π].  
+
+Ta có: h(x) = sin(x) + cos(x) = √2.sin(x + π/4) -> max h(x) = √2 ≈ 1,1412.  
+Xảy ra khi: x = π/4.  
+Phương pháp chọn lọc: Roulette Wheel Selection.  
+Đột biến: Xác suất 5%.  
+
+#### Code chính
+
 
 
 
