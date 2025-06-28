@@ -102,7 +102,27 @@ Xảy ra khi: x = π/4.
 Phương pháp chọn lọc: Roulette Wheel Selection.  
 Đột biến: Xác suất 5%.  
 
-#### Code chính
+#### Code chính  
+![image](https://github.com/user-attachments/assets/5c14fec5-9a16-486a-b4b1-852abd7f2e32)  
+- Lấy fitness nhỏ nhất trong quần thể (trong đoạn code có thể là -1,1412).  
+- Nếu có giá trị âm, ta dịch tất cả fitness về dương.
+
+![image](https://github.com/user-attachments/assets/86ce6a06-9d02-4244-a68f-9320f26e7ca1)  
+- total_fitness: tổng độ thích nghi của quần thể.  
+- pick: chọn ngẫu nhiên 1 giá trị trong đoạn [0, total_fitness].  
+- current: biến cộng dồn, xác định vị trí rơi của pick.
+
+![image](https://github.com/user-attachments/assets/153ee70d-a43f-49af-9648-4598ddd1d940)  
+- Vòng lặp sẽ cộng dồn từng giá trị fitness.
+- Khi current vượt qua pick, tức là roulette đã được chọn.
+
+![image](https://github.com/user-attachments/assets/6a7ed0f0-97e5-4e2c-8b4f-6693e1955454)  
+Đoạn code sử dụng mức độ đột biến mutation_rate = 5%.  
+- Random 1 số ngẫu nhiên trong đoạn [0, 1], nếu nhỏ hơn 5% thì cá thể sẽ bị đột biến.
+- Ngược lại, cá thể sẽ được gán một giá trị trong khoảng [0; 2π].
+
+
+
 
 
 
