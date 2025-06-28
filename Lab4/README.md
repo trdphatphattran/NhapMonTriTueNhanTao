@@ -150,6 +150,35 @@ Khai báo hàm mục tiêu.
   + Đột biến một số con.
   + Đưa ra quần thể mới.
  
+### Bài 4  
+Cho hàm mục tiêu: 2*x**2 + 9*x.  
+- pop_size = 60.    
+- generations = 90.  
+- mutation_rate = 0.5.  
+- cross_rate = 0.8.  
+- min_val = 0.  
+- max_val = 20.
+
+#### Sự khác nhau của đoạn 3 phương pháp Random, Tournament Selection và Roulette Wheel Selection:  
+##### Random  
+![image](https://github.com/user-attachments/assets/382c942b-1e4f-45dc-8e7e-3080aaa4254e)  
+
+Chọn một cách ngẫu nhiên, không liên quan tới fitness.  
+Ưu điểm:  
+- Đơn giản.
+- Duy trì tính đa dạng quần thể tốt.
+Nhược điểm:
+- Không ưu tiên cá thể tốt, tối ưu chậm.
+
+##### Tournament Selection  
+![image](https://github.com/user-attachments/assets/dfba2ac6-cb4b-4c5b-9cd2-5abdb7ac390e)  
+
+
+
+
+
+
+ 
 
 
 
