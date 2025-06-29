@@ -179,6 +179,7 @@ Trong số đó sẽ chọn ra cá thể có fitness tốt nhất.
 Ưu điểm:  
 - Chọn lọc vừa phải.
 - Duy trì tính cạnh tranh.
+
 Nhược điểm:
 - Có thể bỏ qua cá thể tốt nếu không nằm trong nhóm chọn.
 
@@ -189,6 +190,7 @@ Mỗi cá thể chọn có xác suất tương ứng với fitness.
 Cá thể tốt có tỉ lệ chọi cao hơn.  
 Ưu điểm:  
 - Hội tụ nhanh.
+
 Nhược điểm:
 - Dễ mất đa dạng.
 - Làm giảm đa dạng gen nếu cá thể ưu tú chiếm ưu thế quá lớn, dễ rơi vào giá trị cục bộ.
