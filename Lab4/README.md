@@ -192,31 +192,23 @@ Nhược điểm:
 - Dễ mất đa dạng.
 - Làm giảm đa dạng gen nếu cá thể ưu tú chiếm ưu thế quá lớn, dễ rơi vào giá trị cục bộ.
 
+### Bài 5  
+Biểu diễn hàm mục tiêu: x**2 + y**2 + z**2 (không gian 3 chiều) và vẽ biểu đồ phân tán scatter plot thể hiện sự phân bố qua các thế hệ.  
+![image](https://github.com/user-attachments/assets/6255f6cc-e806-43ca-9ae5-1746b2bffc85)  
+Khởi tạo quần thể ban đầu gồm nhiều cá thể 3D dạng (x, y, z) nằm trong đoạn [-5, 5].  
+![image](https://github.com/user-attachments/assets/b60889c4-b111-49f8-9633-2c29546668de)  
+Với xác suất 0.8, lấy trung bình giữa các thành phần cha mẹ. Ngược lại thì giữ nguyên gen từ cha mẹ đầu tiên.  
+![image](https://github.com/user-attachments/assets/d9dde2b9-5b0c-49f1-8bff-98a20c8fae6d)  
+Với mỗi gen (x, y, z), có 10% xác suất đột biến thành một giá trị mới nằm trong [-5, 5].  
+![image](https://github.com/user-attachments/assets/cb1a0226-a48e-479d-bc1d-249d2e35ec7c)  
+Vẽ biểu đồ phân bố quần thể tại 3 thời điểm:  
+- Lúc đầu (gen 0).
+- Giữa quá trình.
+- Kết thúc (gen cuối).
+Hiển thị các cặp (x, y), (y, z), (x, z) để dễ hình dung.
 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/fa3e68f5-0492-4da9-948d-d189152568ac)  
+Biểu đồ hội tụ, vẽ quá trình giảm giá trị k(x, y, z) theo từng thế hệ.  
 
 ## Hướng dẫn  
 ### 1. Cài đặt môi trường  
