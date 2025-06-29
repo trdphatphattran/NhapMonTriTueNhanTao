@@ -166,7 +166,7 @@ Cho hàm mục tiêu: 2*x**2 + 9*x.
 Chọn một cách ngẫu nhiên, không liên quan tới fitness.  
 Ưu điểm:  
 - Đơn giản.
-- Duy trì tính đa dạng quần thể tốt.
+- Duy trì tính đa dạng quần thể tốt.  
 Nhược điểm:
 - Không ưu tiên cá thể tốt, tối ưu chậm.
 
