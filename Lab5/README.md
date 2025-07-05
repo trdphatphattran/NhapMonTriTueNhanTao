@@ -102,6 +102,43 @@ Tầng conv3 giúp mô hình hiểu sâu hơn về hình ảnh, phân biệt rõ
 - Độ chính xác có thể tăng lên vì mạng có khả năng học mối quan hệ phức tạp hơn.
 
 ### Câu 3:  
+- Yêu cầu: Thử 2 giá trị learning rate khác nhau: 0.001 và 0.1.  
+- Chạy lại code và ghi nhận.  
+- Viết ngắn gọn về cách learning rate ảnh hưởng đến quá trình học của hình.
+
+#### Với lr = 0.001:  
+![image](https://github.com/user-attachments/assets/99ce93e1-6ad2-498b-847f-b4f5b1213e36)  
+
+##### Độ chính xác trên tập test với learning rate 0.001 sẽ giảm rõ rệt, cụ thể:  
+- Chênh lệch giữa các accuracy là rất lớn.
+- Với lr = 0.001 thì mô hình sẽ học rất chậm và lâu nhận diện.
+
+##### Biểu đồ mất mát (loss) giảm mạnh, sau đó giảm dần đều, cụ thể:  
+- Giai đoạn 1: loss giảm mạnh, mô hình bắt đầu học được đáng kể.
+- Giai đoạn 2 -> 3: loss giảm khá chậm, mô hình đã có thể nhận diện được một số đặc trưng cơ bản.
+- Giai đoạn 4 -> 5: loss giảm chậm, mô hình đã học gần như hoàn hảo các đặc trưng.
+
+#### Với lr = 0.1:  
+![image](https://github.com/user-attachments/assets/ff0c80e1-bc28-4f40-8fd8-74bb22c38564)  
+
+##### Độ chính xác trên tập test với learning rate = 0.1 sẽ giảm rõ rệt, cụ thể:  
+- Chênh lệch giữa các accuracy là lớn.
+- Với lr = 0.1, mô hình không hội tụ tốt dẫn đến không chính xác trên tập test.
+
+##### Biểu đồ mất mát (loss) giảm mạnh, sau đó giảm không đều, cụ thể:  
+- Giai đoạn 1: loss giảm mạnh, mô hình đang học tốt.
+- Giai đoạn 2 -> 5: loss giảm đều nhưng chậm hơn, mô hình có thể gần như hoàn hảo nhưng hơi chậm.
+
+##### Cách learning rate ảnh hưởng đến quá trình học của mô hình:  
+- lr nhỏ: Mô hình học rất chậm, cần nhiều epoch để hội tụ, nhưng quá trình học khá ổn định.
+- lr phù hợp: Mô hình học nhanh và ổn định, loss giảm đều, dễ đạt độ chính xác cao.
+- lr lớn: Mô hình học không ổn định, loss dao động bất thường, có thể không hội tụ.
+ 
+
+
+
+
+
 
 
 
