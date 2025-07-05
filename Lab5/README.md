@@ -99,7 +99,11 @@ CNN dùng trong nhiều lĩnh vực:
 - conv2: Học các đặc trưng như góc, nét căng.
 - conv3: Học các đặc trưng như cấu trúc số, ...  
 Tầng conv3 giúp mô hình hiểu sâu hơn về hình ảnh, phân biệt rõ hơn giữa các con số.
-- Độ chính xác có thể tăng lên.
+- Độ chính xác có thể tăng lên vì mạng có khả năng học mối quan hệ phức tạp hơn.
+
+### Câu 3:  
+
+
 
 
 
