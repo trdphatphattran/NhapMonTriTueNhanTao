@@ -133,6 +133,31 @@ Tầng conv3 giúp mô hình hiểu sâu hơn về hình ảnh, phân biệt rõ
 - lr nhỏ: Mô hình học rất chậm, cần nhiều epoch để hội tụ, nhưng quá trình học khá ổn định.
 - lr phù hợp: Mô hình học nhanh và ổn định, loss giảm đều, dễ đạt độ chính xác cao.
 - lr lớn: Mô hình học không ổn định, loss dao động bất thường, có thể không hội tụ.
+
+### Câu 4:  
+- Yêu cầu: Sửa hàm visualize_feature_map để vẽ thêm hai feature map từ tầng conv2.
+- Chạy lại mô hình và mô tả sự khác biệt giữa feature map từ conv1 và conv2
+- Viết ngắn gọn về sự khác biệt giữa feature map từ các tầng khác nhau.
+
+![image](https://github.com/user-attachments/assets/6a320283-4b80-4174-bbdb-8bd2cb7fc561)  
+
+##### Sau khi chạy lại mô hình, chúng ta sẽ thấy có 5 ảnh:  
+- 1 ảnh gốc.
+- 2 ảnh feature map conv1.
+- 2 ảnh feature map conv2.
+
+##### Mô tả sự khác biệt:  
+###### Conv1:  
+- Hiển thị rõ viền và nét của số 7 gồm đường chéo và đường ngang rõ ràng, độ cong và mép nét đều được giữ lại.
+- Feature map vẫn giữ nhiều chi tiết không gian của ảnh gốc.
+###### Conv2:  
+- Hiển thị các vùng chính của số 7 bao gồm vùng đầu số 7 được nhấn mạnh, các vùng còn lại mờ hơn.
+- Ảnh trở nên thô hơn, tập trung vào hình dạng tổng quát.
+
+
+
+
+
  
 
 
