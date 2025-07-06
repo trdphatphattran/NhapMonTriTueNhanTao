@@ -154,6 +154,33 @@ Tầng conv3 giúp mô hình hiểu sâu hơn về hình ảnh, phân biệt rõ
 - Hiển thị các vùng chính của số 7 bao gồm vùng đầu số 7 được nhấn mạnh, các vùng còn lại mờ hơn.
 - Ảnh trở nên thô hơn, tập trung vào hình dạng tổng quát.
 
+## Hướng dẫn  
+### 1. Cài đặt môi trường  
+Cài python, sau đó cài các thư viện:  
+Dùng tổ hợp phím: Win + R + cmd:  
+- pip install torch torchvision torchaudio.
+- pip install numpy matplotlib.
+
+### 2. Chạy notebook  
+- Mở jupyter notebook trên VSCode.
+- Code từng bài chạy và xem kết quả.
+- Nếu xảy ra lỗi: code sai, chưa cài thư viện... --> Không chạy được code.
+
+### 3. Tùy chỉnh tham số  
+Thay đổi các tham số như:  
+- epoch tăng hoặc giảm.
+- Thêm các tầng tích chập.
+- Thay đổi learning rate.
+- Vẽ thêm feature map.
+- ...
+
+## Tài liệu hướng dẫn  
+- Slide thực hành - Van Lang University.
+- An Introduction to Convolutional Neural Networks (CNNs).
+- GeeksforGeeks – “Introduction to Convolution Neural Network.
+
+
+
 
 
 
