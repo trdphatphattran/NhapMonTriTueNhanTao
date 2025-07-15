@@ -10,21 +10,22 @@ Năm học: 2024 - 2025
 - Phân phối Gaussian.
 ## 1. Naive Bayes là gì?  
 Naive Bayes là một thuật toán học máy đơn giản nhưng mạnh mẽ, dùng cho phân loại (classification). Nó dựa trên định lý Bayes trong xác suất thống kê và giả định “naive” rằng các đặc trưng (features) là độc lập với nhau – điều này hiếm đúng trong thực tế, nhưng vẫn cho kết quả rất tốt trong nhiều bài toán thực tế như lọc thư rác, phân loại văn bản, nhận diện cảm xúc, ...  
-## 2. Định lý
+## 2. Định lý  
 <img width="263" height="112" alt="image" src="https://github.com/user-attachments/assets/c258d671-31de-402f-8448-f6f145ced929" />  
+
 Trong đó:  
-- A: nhãn lớp (labels).
-- B: tập các đặc trưng (features).
+- A: nhãn lớp (labels).  
+- B: tập các đặc trưng (features).  
 ## 3. Các loại Naive Bayes  
-- Gaussian: dùng cho dữ liệu liên tục, giả định phân phối chuẩn.
-- Multinomial: phổ biến trong phân loại văn bản.
-- Bernoulli: Dùng khi đặc trưng là nhị phân.
-## 4. Ví dụ
-### Xây dựng trang web theo yêu cầu sau:
+- Gaussian: dùng cho dữ liệu liên tục, giả định phân phối chuẩn.  
+- Multinomial: phổ biến trong phân loại văn bản.  
+- Bernoulli: Dùng khi đặc trưng là nhị phân.  
+## 4. Ví dụ  
+### Xây dựng trang web theo yêu cầu sau:  
 Cho tệp dữ liệu: Education.csv và drug200.csv.  
 Trong đó:  
-- Text: chứa đoạn văn bản liên quan đến chủ đề giáo dục.
-- Label: chứa nhãn cảm xúc của văn bản (positive và negative).
+- Text: chứa đoạn văn bản liên quan đến chủ đề giáo dục.  
+- Label: chứa nhãn cảm xúc của văn bản (positive và negative).  
 Yêu cầu: Áp dụng thuật toán Naive Bayes (phân phối bernoulli và phân phối Multinomial) để dự đoán cảm xúc của văn bản là tích cực hay tiêu cực và so sánh kết quả của hai phân phối đó.  
 - Age: Tuổi của bệnh nhân  
 - Sex: Giới tính của bệnh nhân  
