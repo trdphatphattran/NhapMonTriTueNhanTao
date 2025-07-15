@@ -79,25 +79,28 @@ Giúp tránh dùng train_test_split của sklearn nếu muốn kiểm soát logi
 ##### Tạo giao diện với Gradio  
 ###### Tạo giao diện cho education.csv  
 <img width="760" height="223" alt="image" src="https://github.com/user-attachments/assets/d1773fc4-bcce-47c5-a04a-319ed0141a16" />  
-- Nhập văn bản.
+
+- Nhập văn bản.  
 - Trả cảm xúc + ROC + bar chart.
+
 ###### Ví dụ:  
 - Input: The impact of educational reforms remains uncertain despite extensive research.  
 - Output:  
 <img width="1253" height="726" alt="image" src="https://github.com/user-attachments/assets/98e008b4-cd2a-42a6-8c40-0c58bfaf71b8" />
-Giao diện toàn bộ web:
-<img width="1253" height="726" alt="image" src="https://github.com/user-attachments/assets/04bb9e04-08a4-4c80-baf7-f8f99e147b6c" />
+
+Giao diện toàn bộ web:  
+<img width="1253" height="726" alt="image" src="https://github.com/user-attachments/assets/04bb9e04-08a4-4c80-baf7-f8f99e147b6c" />  
 
 ###### Tạo giao diện cho grug20.csv  
 <img width="682" height="310" alt="image" src="https://github.com/user-attachments/assets/fd5b083f-9a2c-44e9-aad1-1f3dce3dc02a" />  
-- Nhập thông tin bệnh nhân.
-- Trả về loại thuốc phù hợp và biểu đồ xác suất.
+- Nhập thông tin bệnh nhân.  
+- Trả về loại thuốc phù hợp và biểu đồ xác suất.  
 ###### Ví dụ:  
-- Input: 23,F,HIGH,HIGH,25.355.
-- Output:
-<img width="617" height="356" alt="image" src="https://github.com/user-attachments/assets/ab15e233-0205-4bdf-8e3d-e8905abd9b71" />
-Giao diện toàn bộ web:
-<img width="1248" height="424" alt="image" src="https://github.com/user-attachments/assets/d9461e2c-33f8-4f26-ac8e-d3ce2115ddf3" />
+- Input: 23,F,HIGH,HIGH,25.355.  
+- Output:  
+<img width="617" height="356" alt="image" src="https://github.com/user-attachments/assets/ab15e233-0205-4bdf-8e3d-e8905abd9b71" />  
+Giao diện toàn bộ web:  
+<img width="1248" height="424" alt="image" src="https://github.com/user-attachments/assets/d9461e2c-33f8-4f26-ac8e-d3ce2115ddf3" />  
 
 
 
