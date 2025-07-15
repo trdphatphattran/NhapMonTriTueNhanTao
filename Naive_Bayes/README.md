@@ -91,7 +91,7 @@ Giúp tránh dùng train_test_split của sklearn nếu muốn kiểm soát logi
 Giao diện toàn bộ web:  
 <img width="1253" height="726" alt="image" src="https://github.com/user-attachments/assets/04bb9e04-08a4-4c80-baf7-f8f99e147b6c" />  
 
-###### Tạo giao diện cho grug20.csv  
+###### Tạo giao diện cho drug20.csv  
 <img width="682" height="310" alt="image" src="https://github.com/user-attachments/assets/fd5b083f-9a2c-44e9-aad1-1f3dce3dc02a" />  
 
 - Nhập thông tin bệnh nhân.  
