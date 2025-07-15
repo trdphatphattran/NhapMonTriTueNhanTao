@@ -104,6 +104,27 @@ Giao diện toàn bộ web:
 Giao diện toàn bộ web:  
 <img width="1248" height="424" alt="image" src="https://github.com/user-attachments/assets/d9461e2c-33f8-4f26-ac8e-d3ce2115ddf3" />  
 
+## Hướng dẫn  
+### 1. Cài đặt môi trường  
+Cài python và cài các thư viện cần thiết.  
+Cài đặt Gradio để xây dựng giao diện web (vào terminal và gõ pip install gradio).  
+
+### 2. Chạy notebook  
+- Mở jupyter notebook trên VSCode  
+- Code từng bài chạy và xem kết quả.  
+- Nếu xảy ra lỗi: code sai, chưa cài thư viện... --> Không chạy được code.
+
+### 3. Tùy chỉnh tham số  
+- Có thể thay thế các input khác nhau để xem các output như thế nào.
+
+## Tài liệu hướng dẫn  
+- Slide thực hành - Van Lang University.
+- Tạo web tại https://www.gradio.app/.
+
+
+
+
+
 
 
 
