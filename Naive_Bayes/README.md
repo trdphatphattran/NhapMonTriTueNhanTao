@@ -68,12 +68,13 @@ Giúp tránh dùng train_test_split của sklearn nếu muốn kiểm soát logi
 <img width="446" height="239" alt="image" src="https://github.com/user-attachments/assets/85fe1e07-0014-45f5-a602-f93ceac83266" />  
 
 - Encode các cột dạng text về số.  
-- Dùng GaussianNB() vì dữ liệu đầu vào dạng liên tục hoặc gần liên tục.
+- Dùng GaussianNB() vì dữ liệu đầu vào dạng liên tục hoặc gần liên tục.  
 
 ###### Hàm dự đoán thuốc  
 <img width="528" height="535" alt="image" src="https://github.com/user-attachments/assets/58ed0624-6b42-4823-920b-7b4e6deebd1e" />  
-- Dự đoán thuốc phù hợp với các đặc trưng đầu vào.
-- Trả về tên thuốc dự đoán (A/B/C/X/Y) và biểu đồ thanh xác suất từng loại thuốc.
+
+- Dự đoán thuốc phù hợp với các đặc trưng đầu vào.  
+- Trả về tên thuốc dự đoán (A/B/C/X/Y) và biểu đồ thanh xác suất từng loại thuốc.  
 
 ##### Tạo giao diện với Gradio  
 ###### Tạo giao diện cho education.csv  
