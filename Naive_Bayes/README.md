@@ -37,17 +37,25 @@ Yêu cầu: Áp dụng thuật toán Naive Bayes (phân phối Gaussian) để d
 
 #### Bài làm  
 <img width="300" height="152" alt="image" src="https://github.com/user-attachments/assets/4b851ea1-1045-473f-9c4b-ea4ecfdc1f88" />  
+
 Đây là hàm load dữ liệu từ 2 tệp education.csv và drug200.csv.  
+
 ##### Mô hình 1: Phân loại văn bản với Bernoulli  
+
 ###### Chia tập train  
+
 <img width="555" height="158" alt="image" src="https://github.com/user-attachments/assets/7dc8351b-1b96-4c70-ad3d-502292249ee9" />  
+
 Giúp tránh dùng train_test_split của sklearn nếu muốn kiểm soát logic chia bằng permute.  
+
 ###### Huấn luyện với Bernoulli  
+
 <img width="677" height="259" alt="image" src="https://github.com/user-attachments/assets/a3cf13ad-fc91-4af7-9c5e-98a542a9c814" />  
-- Dữ liệu văn bản được chuyển sang nhị phân bằng CountVectorizer(binary=True).
-- Ánh xạ label thành nhị phân: positive --> 1, negative --> 0.
-- Dùng BernoulliNB() để train.
-- Tính đường cong ROC từ tập test.
+
+- Dữ liệu văn bản được chuyển sang nhị phân bằng CountVectorizer(binary=True).  
+- Ánh xạ label thành nhị phân: positive --> 1, negative --> 0.  
+- Dùng BernoulliNB() để train.  
+- Tính đường cong ROC từ tập test.  
 ###### Hàm dự đoán cả xúc văn bản  
 <img width="646" height="754" alt="image" src="https://github.com/user-attachments/assets/50809f76-b24d-4c24-a104-90616479f9f4" />  
 - Nhận diện một chuỗi văn bản.
