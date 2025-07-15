@@ -93,12 +93,14 @@ Giao diện toàn bộ web:
 
 ###### Tạo giao diện cho grug20.csv  
 <img width="682" height="310" alt="image" src="https://github.com/user-attachments/assets/fd5b083f-9a2c-44e9-aad1-1f3dce3dc02a" />  
+
 - Nhập thông tin bệnh nhân.  
 - Trả về loại thuốc phù hợp và biểu đồ xác suất.  
 ###### Ví dụ:  
 - Input: 23,F,HIGH,HIGH,25.355.  
 - Output:  
-<img width="617" height="356" alt="image" src="https://github.com/user-attachments/assets/ab15e233-0205-4bdf-8e3d-e8905abd9b71" />  
+<img width="617" height="356" alt="image" src="https://github.com/user-attachments/assets/ab15e233-0205-4bdf-8e3d-e8905abd9b71" />
+
 Giao diện toàn bộ web:  
 <img width="1248" height="424" alt="image" src="https://github.com/user-attachments/assets/d9461e2c-33f8-4f26-ac8e-d3ce2115ddf3" />  
 
