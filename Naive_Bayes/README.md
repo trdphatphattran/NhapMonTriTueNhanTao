@@ -58,6 +58,7 @@ Giúp tránh dùng train_test_split của sklearn nếu muốn kiểm soát logi
 - Tính đường cong ROC từ tập test.  
 ###### Hàm dự đoán cả xúc văn bản  
 <img width="646" height="754" alt="image" src="https://github.com/user-attachments/assets/50809f76-b24d-4c24-a104-90616479f9f4" />  
+
 - Nhận diện một chuỗi văn bản.
 - Dự đoán nhãn và xác suất.
 - Vẽ biểu đồ ROC: đo độ phân biệt mô hình.
