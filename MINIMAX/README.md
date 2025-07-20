@@ -112,6 +112,25 @@ Minimax sẽ:
 
 - Tạo thanh menu cho người dùng nhấn vào nút "Restart Game" để chơi lại.
 
+## So sánh với đoạn code trên  
+### 1. Đoạn code đầu tiên (viết tay, từng nút từ button1 đến button16)  
+#### Ưu điểm:  
+- Tính thủ công: mỗi nút được khai báo và xử lý riêng biệt, giúp hình dung rõ vị trị từng nút và từng điều kiện thắng.
+- Dễ sửa nhanh từng nút: nếu chỉ thay đổi 1 nút cụ thể, bạn có thể chỉnh đúng tên nút đó mà không ảnh hưởng đến toàn bộ.
+
+#### Nhược điểm:  
+- Mã dài dòng: viết từng dòng khiến code trở nên rườm rà, dễ mắc lỗi.
+- Khó mở rộng: nếu muốn chuyển sang dạng lớn hơn, phải viết lại hoặc thêm các nút mới, tốn thời gian.
+
+### 2. Đoạn code thứ hai (dùng từng danh sách buttons[i][j])  
+#### Ưu điểm:  
+- Ngắn gọn, dễ mở rộng: code chỉ viết 1 lần cho phần khởi tạo và kiểm tra, có thể dẽ dàng nâng lên ma trận cao hơn.
+- Tính linh hoạt cao: các hàm như checkLines() và checkDiagonals() được tổ chức tốt, dễ tái sử dụng lại.
+#### Nhược điểm:  
+- Code phức tạp: với người mới học có thể gây ra khó hiểu.
+
+
+
 
 
 
