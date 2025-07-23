@@ -233,6 +233,13 @@ Minimax sẽ:
 
 ## Hướng dẫn  
 ### 1. Cài đặt thư viện  
+- Cài python
+
+### 2. Thay đổi ma trận và các tham số khác  
+- Có thể tự code lại với ma trận lớn hơn với nhiều cách khác nhau để xem kết quả.
+
+## Tài liệu tham khảo  
+- Slide Thực hành - Van Lang University.
 
 
 
