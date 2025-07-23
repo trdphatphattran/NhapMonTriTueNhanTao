@@ -151,6 +151,7 @@ Minimax sẽ:
 
 ### 4. Hàm checkDraw() - Kiểm tra hòa  
 <img width="400" height="104" alt="image" src="https://github.com/user-attachments/assets/fd398929-558f-488a-9bed-741235065ebd" />  
+
 - Nếu tất cả các ô đã được chơi mà không có ai thắng hay thua thì thông báo hòa và khởi động lại ván đấu.
 
 ### 5. Hàm buttonClicked(button) - Xử lý khi nhấn vào nút  
