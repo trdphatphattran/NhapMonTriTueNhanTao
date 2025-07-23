@@ -18,11 +18,11 @@ Minimax sẽ:
 
 ## Ví dụ về bài toán Caro 4x4  
 ### 1. Khởi tạo chương trình và biến
-<img width="239" height="153" alt="image" src="https://github.com/user-attachments/assets/3335c65f-d15b-4b65-b978-5b90d858593f" />
+<img width="239" height="153" alt="image" src="https://github.com/user-attachments/assets/3335c65f-d15b-4b65-b978-5b90d858593f" />  
 
-- Tạo cửa số chính root với tiêu đề "Game XO 4x4".
-- clicked: luôn đổi giữa True và False để xác định lượt chơi (True (X) và False (O)).
-- count: đếm số lượt chơi đã chơi.
+- Tạo cửa số chính root với tiêu đề "Game XO 4x4".  
+- clicked: luôn đổi giữa True và False để xác định lượt chơi (True (X) và False (O)).  
+- count: đếm số lượt chơi đã chơi.  
 
 ### 2. Hàm disableButtons() - Khóa tất cả các nút  
 <img width="290" height="320" alt="image" src="https://github.com/user-attachments/assets/700702dd-746c-47ef-87ed-8b21b0c8990e" />  
@@ -39,7 +39,7 @@ Minimax sẽ:
 ### 4. Hàm checkDraw() - Kiểm tra hòa  
 <img width="374" height="102" alt="image" src="https://github.com/user-attachments/assets/15cfffcf-770a-47db-b353-2bb12069cbeb" />  
 
-- Nếu tất cả 16 ô đã được choi mà không ai thắng thì hiển thị thông báo hòa và khởi động lại.
+- Nếu tất cả 16 ô đã được chơi mà không ai thắng thì hiển thị thông báo hòa và khởi động lại.
 
 ### 5. Hàm buttonClicked(button) - Xử lý khi nhấn vào nút  
 <img width="499" height="294" alt="image" src="https://github.com/user-attachments/assets/ff163dc3-8e55-435a-bc7b-52cc00a6c9df" />  
@@ -128,6 +128,61 @@ Minimax sẽ:
 - Tính linh hoạt cao: các hàm như checkLines() và checkDiagonals() được tổ chức tốt, dễ tái sử dụng lại.
 #### Nhược điểm:  
 - Code phức tạp: với người mới học có thể gây ra khó hiểu.
+
+## Ví dụ về bài toán Caro 5x5  
+### 1. Khởi tạo chương trình và biến  
+<img width="234" height="114" alt="image" src="https://github.com/user-attachments/assets/a375d25d-995a-4054-a904-7e1aaa0a9c7a" />  
+
+- Tạo cửa số chính root với tiêu đề "OX Game".  
+- clicked: luôn đổi giữa True và False để xác định lượt chơi (True (X) và False (O)).  
+- count: đếm số lượt chơi đã chơi.
+
+### 2. Hàm disableButtons() - Khóa tất cả các nút  
+<img width="268" height="472" alt="image" src="https://github.com/user-attachments/assets/8c72c717-b526-4eaf-95bf-fca037d250c9" />  
+
+- Khóa toàn bộ 25 nút lại sau khi có người thắng, không cho nhấn tiếp.
+
+### 3. Hàm checkWinner() - Kiểm tra điều kiện thắng  
+- Lần lượt kiểm tra các tổ hợp thắng:  
+   + 5 hàng ngang.  
+   + 5 cột dọc.  
+   + 2 đường chéo.  
+- Với mỗi tổ hợp, dùng điều kiện if hoặc elif để kiểm tra xem có phải cả 4 ô cùng có giá trị "X" hay "O" không.
+
+### 4. Hàm checkDraw() - Kiểm tra hòa  
+<img width="400" height="104" alt="image" src="https://github.com/user-attachments/assets/fd398929-558f-488a-9bed-741235065ebd" />  
+- Nếu tất cả các ô đã được chơi mà không có ai thắng hay thua thì thông báo hòa và khởi động lại ván đấu.
+
+### 5. Hàm buttonClicked(button) - Xử lý khi nhấn vào nút  
+<img width="504" height="298" alt="image" src="https://github.com/user-attachments/assets/3a64d45a-3dbf-4e4e-871d-3b452919a3e7" />  
+
+- Nếu ô đang nhấn còn trống " ":  
+  + Nếu đang là lượt chơi của người chơi 1 (clicked == True) --> gán X, ngược là là O.  
+- Tăng count lên 1.  
+- Gọi checkWinner() và checkDraw() sau mỗi lần đi.  
+- Nếu người chơi đã ấn vào ô đã chọn rồi thì hiện thông báo lỗi.
+
+### 6. Hàm start() - Khởi động lại game  
+- Tạo lại 25 nút mới.  
+- Reset lại clicked = True, count = 0.  
+- Mỗi nút là 1 button riêng biệt.  
+- Gán từng nút vào lưới grid(row, column) để tạo bàn 5x5.
+
+### 7. Game menu  
+<img width="456" height="143" alt="image" src="https://github.com/user-attachments/assets/b14eaf8f-465e-49d5-89a1-7135ef41a466" />  
+
+- Tạo menu "Options" với lựa chọn là "Restart Game" để khởi động lại trò chơi bằng tay.  
+- Sau đó chạy trò chơi.
+
+
+
+
+
+
+
+
+
+
 
 
 
