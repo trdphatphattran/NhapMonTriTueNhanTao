@@ -175,6 +175,53 @@ Minimax sẽ:
 - Tạo menu "Options" với lựa chọn là "Restart Game" để khởi động lại trò chơi bằng tay.  
 - Sau đó chạy trò chơi.
 
+### Nhận xét tính đúng đắn  
+- Giao diện: hiển thị đầy đủ 25 nút theo dạng lưới 5x5.  
+- Xử lý lượt chơi: chương trình lần lượt phân chia lượt chơi giữa người chơi X và O dựa trên biến clicked, đảm bảo đúng logic luân phiên.  
+- Xử lý thắng cuộc: viết đầy đủ các trường hợp để kiểm tra 4 dấu liên tiếp nhau trên các hàng, cột và hai đường chéo chính, đảm bảo phát hiện đúng người chiến thắng.  
+- Dừng trò chơi khi có người thắng: hàm disableButtons() được gọi để vô hiệu hóa toàn bộ các nút sau khi có người thắng hoặc hòa.  
+- Tái khởi động ván mới: hàm start() được thiết kế để khởi tạo lại toàn bộ nút bấm và đặt lại các biến trạng thái, cho phép chơi nhiều ván liên tục.
+
+## Code theo cách khác  
+### 1. Hàm disableButtons() - Khóa tất cả các nút  
+<img width="299" height="85" alt="image" src="https://github.com/user-attachments/assets/58740dcc-8633-44be-8b4d-3f73e30669f2" />  
+
+- Sau khi có người thắng, không cho ấn tiếp nữa.
+
+### 2. Hàm start() - Khởi động lại game  
+<img width="598" height="154" alt="image" src="https://github.com/user-attachments/assets/f5a27447-f574-4e24-b409-f6eb6de788e7" />  
+
+- Reset toàn bộ trạng thái và giao diện về trạng thái ban đầu.
+
+### 3. Hàm check_winner_np() - Hàm kiểm tra người thắng  
+<img width="736" height="375" alt="image" src="https://github.com/user-attachments/assets/fed46cfc-a488-42e0-909f-485fe6683c78" />  
+
+- Duyệt từng ô trong bảng, nếu ô đó bằng 0 thì kiểm tra trong 4 hướng.
+- Tìm 5 ô liên tiếp có tổng tuyệt đối bằng 5:
+  + sum = 5 --> X thắng.
+  + sum = -5 --> O thắng.
+- Trả về:
+  + 1 hoặc -1 nếu có người thắng và các vị trí thắng.
+  + 0 nếu không ai thắng.
+
+### 4. Hàm b_click() - Xử lý khi người dùng bấm một nút  
+<img width="767" height="522" alt="image" src="https://github.com/user-attachments/assets/d69fbf72-c3c8-40a1-b3c2-a8eac9649c40" />  
+
+- Xử lý lượt chơi X và O.
+- Cập nhật board_state tương ứng với 1 hoặc -1.
+- Kiểm tra người thắng sau mỗi lần bấm.
+- Nếu không có ai thắng hay thua --> hòa.
+- Tạo nút lưới 5x5 trên giao diện.
+- Mỗi nút khi bấm sẽ gọi b_click(r, c) tương ứng.
+
+
+
+
+
+
+
+
+
 
 
 
