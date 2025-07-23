@@ -214,6 +214,25 @@ Minimax sẽ:
 - Tạo nút lưới 5x5 trên giao diện.
 - Mỗi nút khi bấm sẽ gọi b_click(r, c) tương ứng.
 
+## So sánh với đoạn code trên  
+### 1. Đoạn code đầu tiên (viết tay, từng nút từ button1 đến button25)  
+#### Ưu điểm:  
+- Tính thủ công: mỗi nút được khai báo và xử lý riêng biệt, giúp hình dung rõ vị trị từng nút và từng điều kiện thắng.  
+- Dễ sửa nhanh từng nút: nếu chỉ thay đổi 1 nút cụ thể, bạn có thể chỉnh đúng tên nút đó mà không ảnh hưởng đến toàn bộ.  
+
+#### Nhược điểm:  
+- Mã dài dòng: viết từng dòng khiến code trở nên rườm rà, dễ mắc lỗi.  
+- Khó mở rộng: nếu muốn chuyển sang dạng lớn hơn, phải viết lại hoặc thêm các nút mới, tốn thời gian.
+
+### 2. Đoạn code sau  
+#### Ưu điểm:  
+- Mở rộng dễ dàng: chỉ cần thay đổi BOARD_SIZE = 6 là thành 6x6, ...
+- Gọn gàng và dễ bảo trì: logic kiểm tra chỉ cần viết 1 lần, rõ ràng và ngắn gọn.
+#### Nhược điểm:  
+- Code phức tạp, không đơn giản cho người mới.
+
+## Hướng dẫn  
+### 1. Cài đặt thư viện  
 
 
 
