@@ -17,6 +17,10 @@
 
 Duyệt các đỉnh kề của đỉnh hiện tại và thực hiện tìm kiếm đệ quy theo chiều sâu để tìm đường đi đến đỉnh đích, đồng thời tính tổng trọng số trên đường đi. Nếu tìm thấy đường đến đích, nó trả về đường đi và tổng trọng số; nếu không thì trả về None, 0.  
 
+Đáp án:  
+<img width="598" height="39" alt="image" src="https://github.com/user-attachments/assets/a0354d61-af1a-4b53-889d-76745302f7b8" />  
+
+
 ## Câu 2: Tối ưu hóa hàm một biến  
 <img width="750" height="159" alt="image" src="https://github.com/user-attachments/assets/647e11f0-3eea-492a-bd21-8c11739ddbea" />  
 
@@ -25,6 +29,12 @@ Duyệt các đỉnh kề của đỉnh hiện tại và thực hiện tìm ki�
 <img width="719" height="415" alt="image" src="https://github.com/user-attachments/assets/3dd8c082-02ac-46c8-b802-86d8335ad263" />  
 
 Tìm giá trị của x trong khoảng từ min_val đến max_val sao cho hàm f(x) = -x² + 10x + 50 đạt giá trị lớn nhất, bằng cách sử dụng thuật toán di truyền (genetic algorithm). Hàm này mô phỏng quá trình tiến hóa sinh học gồm: khởi tạo quần thể, chọn lọc, lai ghép, đột biến, lặp lại qua nhiều thế hệ để tìm nghiệm tối ưu.  
+
+Đáp án:  
+<img width="299" height="552" alt="image" src="https://github.com/user-attachments/assets/0a536bfe-b1e5-42b8-b496-3d3f81e59ff9" />  
+
+<img width="605" height="468" alt="image" src="https://github.com/user-attachments/assets/83ee1706-50d2-44be-bfdd-c5dbad534beb" />  
+
 
 ## Câu 3: Sử dụng mô hình CNN để phân loại dữ liệu chó và mèo từ data  
 [Kaggle](https://www.kaggle.com/c/dogs-vs-cats/data)  
@@ -42,6 +52,11 @@ Tìm giá trị của x trong khoảng từ min_val đến max_val sao cho hàm 
 #### Huấn luyện  
 <img width="651" height="423" alt="image" src="https://github.com/user-attachments/assets/bfc4bbda-aa23-4783-872a-6f022e130070" />  
 
+Đáp án:  
+<img width="1198" height="500" alt="image" src="https://github.com/user-attachments/assets/a3c3805f-642f-4b36-824e-34ce4f8f04af" />  
+
+<img width="1190" height="610" alt="image" src="https://github.com/user-attachments/assets/dd24f52d-724a-4aa2-9fb3-96411504f653" />  
+
 
 ## Câu 4: Sử dụng Naive Bayes cho tập dữ liệu sau  
 <img width="445" height="432" alt="image" src="https://github.com/user-attachments/assets/cc57b58d-e2b1-4cea-82ef-5b84ba1d1cf0" />  
@@ -58,10 +73,10 @@ Tìm giá trị của x trong khoảng từ min_val đến max_val sao cho hàm 
 
 <img width="649" height="64" alt="image" src="https://github.com/user-attachments/assets/17ed212b-8805-4683-9c53-d37d634f2346" />  
 
-- Chia thành tập huấn luyện và kiểm tra, sau đó huấn luyện Naive Bayes.  
+- Chia thành tập huấn luyện và kiểm tra, sau đó huấn luyện Naive Bayes.
 
-
-
+Đáp án:  
+<img width="410" height="216" alt="image" src="https://github.com/user-attachments/assets/e8d12f7a-9d4e-4e25-9fbe-f35a582d003a" />  
 
 ## Tài liệu tham khảo  
 - Lab DFS, thuật toán di truyền, CNN, Naive Bayes lý thuyết + thực hành - Van Lang University.  
