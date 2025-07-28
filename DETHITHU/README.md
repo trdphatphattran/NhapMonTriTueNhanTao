@@ -32,6 +32,23 @@ Tìm giá trị của x trong khoảng từ min_val đến max_val sao cho hàm 
 ## Câu 4: Sử dụng Naive Bayes cho tập dữ liệu sau  
 <img width="445" height="432" alt="image" src="https://github.com/user-attachments/assets/cc57b58d-e2b1-4cea-82ef-5b84ba1d1cf0" />  
 
+### Code chính  
+
+<img width="342" height="97" alt="image" src="https://github.com/user-attachments/assets/beeaff86-2756-4c9b-8b0e-c948333b2983" />  
+
+- Mã hóa các biến phân loại thành số.
+
+<img width="203" height="46" alt="image" src="https://github.com/user-attachments/assets/f9d37db7-22ed-4195-86ec-63dde28e9467" />  
+
+- Tách dữ liệu thành đặc trưng và nhãn.
+
+<img width="649" height="64" alt="image" src="https://github.com/user-attachments/assets/17ed212b-8805-4683-9c53-d37d634f2346" />  
+
+- Chia thành tập huấn luyện và kiểm tra, sau đó huấn luyện Naive Bayes.  
+
+
+
+
 ## Tài liệu tham khảo  
 - Lab DFS, thuật toán di truyền, CNN, Naive Bayes lý thuyết + thực hành - Van Lang University.  
 
