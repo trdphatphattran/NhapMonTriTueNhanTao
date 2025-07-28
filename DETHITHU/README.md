@@ -27,7 +27,7 @@ Duyệt các đỉnh kề của đỉnh hiện tại và thực hiện tìm ki�
 Tìm giá trị của x trong khoảng từ min_val đến max_val sao cho hàm f(x) = -x² + 10x + 50 đạt giá trị lớn nhất, bằng cách sử dụng thuật toán di truyền (genetic algorithm). Hàm này mô phỏng quá trình tiến hóa sinh học gồm: khởi tạo quần thể, chọn lọc, lai ghép, đột biến, lặp lại qua nhiều thế hệ để tìm nghiệm tối ưu.  
 
 ## Câu 3: Sử dụng mô hình CNN để phân loại dữ liệu chó và mèo từ data  
-[Kaggle](https://www.kaggle.com/c/dogs-vs-cats/data).  
+[Kaggle](https://www.kaggle.com/c/dogs-vs-cats/data)  
 
 ### Phần dùng để huấn luyện mô hình  
 #### Tạo dataset và dataloader  
